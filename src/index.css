@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* BACKGROUNDS */
+        --bg-white: #FFFFFF;
+        --bg-blush: #F1DDDA;
+        --bg-rose: #8C5E5A;
+        --bg-footer: #333333;
+
+        /* TEXT COLORS */
+        --text-heading: #7A5C58;
+        --text-body: #555555;
+        --text-white: #FFFFFF;
+
+        /* ACCENTS */
+        --accent-gold: #D4AF37;
+        --accent-cta: #C08A7A;
+
+        /* UI */
+        --border-soft: #E6D3CF;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--bg-white);
+        color: var(--text-body);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        line-height: 1.7;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .font-serif {
+        font-family: 'Playfair Display', serif;
+        color: var(--text-heading);
+    }
+}
