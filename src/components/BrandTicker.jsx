@@ -2,8 +2,11 @@ import { motion, useScroll, useTransform, useSpring, useVelocity, useAnimationFr
 import { useRef } from 'react';
 
 const brands = [
-    "D'Decor", "Asian Paints", "Saint-Gobain", "Greenpanel", "Somfy",
-    "Bombay Dyeing", "Swayam", "Century Ply", "Jaguar", "Havells"
+    "D'Decor", "GMF", "Rumors", "Warwick", "Atmosphere", "Casamance",
+    "Marburg Wallcoverings", "Nilaya", "Excel Wallcoverings", "Kazāgē",
+    "Versace", "Designers Guild", "Livin Blinds", "TOSO (Japan)", "Somfy",
+    "AD", "Divine", "NBT", "Vald’or", "Newmat", "Greenpanel",
+    "Asian TESA", "HI-MACS", "LG Hausys", "DuPont"
 ];
 
 function ParallaxText({ children, baseVelocity = 100 }) {
@@ -35,6 +38,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
         baseX.set(baseX.get() + moveBy);
 
         // Wrap logic
+        // Increased wrap threshold to account for longer list
         if (baseX.get() <= -100) {
             baseX.set(0);
         } else if (baseX.get() >= 0) {
@@ -46,8 +50,6 @@ function ParallaxText({ children, baseVelocity = 100 }) {
         <motion.div className="flex whitespace-nowrap gap-16" style={{ x, skewX: skew }}>
             {children}
             {children}
-            {children}
-            {children}
         </motion.div>
     );
 }
@@ -55,7 +57,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function BrandTicker() {
     return (
         <div className="bg-blush border-b border-soft-border py-12 overflow-hidden relative">
-            <ParallaxText baseVelocity={2}>
+            <ParallaxText baseVelocity={3}>
                 {brands.map((brand, index) => (
                     <span
                         key={index}

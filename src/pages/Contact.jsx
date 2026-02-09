@@ -75,16 +75,16 @@ export default function Contact() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-body-text text-sm mb-2">First Name</label>
-                                    <input type="text" className="w-full bg-white border border-soft-border rounded-lg px-4 py-3 text-heading focus:outline-none focus:border-cta transition-colors placeholder:text-gray-400" placeholder="John" />
+                                    <input type="text" className="w-full bg-white border border-soft-border rounded-lg px-4 py-3 text-heading focus:outline-none focus:border-cta transition-colors placeholder:text-gray-400" placeholder="Amit" />
                                 </div>
                                 <div>
                                     <label className="block text-body-text text-sm mb-2">Last Name</label>
-                                    <input type="text" className="w-full bg-white border border-soft-border rounded-lg px-4 py-3 text-heading focus:outline-none focus:border-cta transition-colors placeholder:text-gray-400" placeholder="Doe" />
+                                    <input type="text" className="w-full bg-white border border-soft-border rounded-lg px-4 py-3 text-heading focus:outline-none focus:border-cta transition-colors placeholder:text-gray-400" placeholder="Kumar" />
                                 </div>
                             </div>
                             <div>
                                 <label className="block text-body-text text-sm mb-2">Email</label>
-                                <input type="email" className="w-full bg-white border border-soft-border rounded-lg px-4 py-3 text-heading focus:outline-none focus:border-cta transition-colors placeholder:text-gray-400" placeholder="john@example.com" />
+                                <input type="email" className="w-full bg-white border border-soft-border rounded-lg px-4 py-3 text-heading focus:outline-none focus:border-cta transition-colors placeholder:text-gray-400" placeholder="amit@example.com" />
                             </div>
                             <div>
                                 <label className="block text-body-text text-sm mb-2">Message</label>
