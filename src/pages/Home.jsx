@@ -224,20 +224,22 @@ export default function Home() {
             </section>
 
             {/* Company Photo Section */}
+            {/* Company Photo Section */}
             <section className="py-24 bg-blush/20">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-12">
                         <span className="text-gold tracking-[0.2em] uppercase text-xs font-bold block mb-4">Our Team</span>
                         <h2 className="text-3xl md:text-4xl font-serif text-heading">The People Behind the <span className="italic text-body-text">Passion</span></h2>
                     </div>
-                    <div className="relative w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-                        <img
-                            src="/src/assets/company.jpeg"
-                            alt="The SVE Interior Team"
-                            className="w-full h-auto object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-                    </div>
+                </div>
+                {/* Full Width Image Container */}
+                <div className="w-full relative h-[60vh] md:h-[80vh]">
+                    <img
+                        src="/src/assets/company.jpeg"
+                        alt="The SVE Interior Team"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 </div>
             </section>
 

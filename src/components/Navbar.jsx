@@ -44,7 +44,7 @@ export default function Navbar() {
                     <img
                         src={logo}
                         alt="SVE Interior"
-                        className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                        className="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                     />
                 </Link>
 
