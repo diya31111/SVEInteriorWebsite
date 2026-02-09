@@ -1,7 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import { ArrowLeftRight } from 'lucide-react';
 
-export default function BeforeAfter() {
+export default function BeforeAfter({
+    beforeImage = "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop",
+    afterImage = "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1600&auto=format&fit=crop"
+}) {
     const [sliderPosition, setSliderPosition] = useState(50);
     const [isDragging, setIsDragging] = useState(false);
     const containerRef = useRef(null);
@@ -48,7 +51,7 @@ export default function BeforeAfter() {
                 >
                     {/* After Image (Background) */}
                     <img
-                        src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1600&auto=format&fit=crop"
+                        src={afterImage}
                         alt="After Renovation"
                         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                     />
@@ -62,7 +65,7 @@ export default function BeforeAfter() {
                         }}
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop"
+                            src={beforeImage}
                             alt="Before Renovation"
                             className="absolute inset-0 w-full h-full object-cover filter brightness-90 sepia-[0.3]"
                         />

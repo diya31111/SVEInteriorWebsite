@@ -35,7 +35,7 @@ export default function Home() {
                 <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
                     <div className="mb-8">
                         <ShinyText
-                            text="Est. 2012 — Jaipur, India"
+                            text="Est. 2008 — Jaipur, India"
                             className="text-heading uppercase text-xs md:text-sm font-bold tracking-[0.3em] drop-shadow-sm"
                         />
                     </div>
@@ -178,7 +178,11 @@ export default function Home() {
             </section>
 
             {/* Transformation Showcase */}
-            <BeforeAfter />
+            {/* Transformation Showcase */}
+            <BeforeAfter
+                beforeImage="/src/assets/WhatsApp Image 2026-02-09 at 5.33.49 PM.jpeg"
+                afterImage="/src/assets/WhatsApp Image 2026-02-09 at 5.33.48 PM.jpeg"
+            />
 
             {/* Testimonials */}
             <section className="py-32 bg-white border-t border-soft-border">
@@ -215,6 +219,24 @@ export default function Home() {
                                 <span className="text-cta text-[10px] uppercase tracking-widest opacity-70 group-hover:opacity-100 transition-opacity">{item.role}</span>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Company Photo Section */}
+            <section className="py-24 bg-blush/20">
+                <div className="container mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <span className="text-gold tracking-[0.2em] uppercase text-xs font-bold block mb-4">Our Team</span>
+                        <h2 className="text-3xl md:text-4xl font-serif text-heading">The People Behind the <span className="italic text-body-text">Passion</span></h2>
+                    </div>
+                    <div className="relative w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+                        <img
+                            src="/src/assets/company.jpeg"
+                            alt="The SVE Interior Team"
+                            className="w-full h-auto object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                     </div>
                 </div>
             </section>
