@@ -2,8 +2,9 @@ import { useState, useRef, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { products } from '../data/products';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
-import { ArrowLeft, ArrowRight, User, Phone, Mail } from 'lucide-react';
+import { ArrowLeft, User, Phone, Mail } from 'lucide-react';
 import BlurText from '../components/react-bits/BlurText';
+import DesignGuidanceBlock from '../components/DesignGuidanceBlock';
 
 // Window Pan Image Component
 const WindowPanImage = ({ src, alt, layoutId }) => {
@@ -136,25 +137,8 @@ export default function ProductDetail() {
                                 </p>
                             </div>
 
-                            {/* Glassmorphism Form */}
-                            <div className="bg-white/40 backdrop-blur-md p-8 rounded-2xl border border-white/40 shadow-2xl">
-                                <h3 className="text-2xl font-serif text-heading mb-6">Request Estimation</h3>
-                                <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-                                    <div className="space-y-1">
-                                        <label className="text-xs text-body-text uppercase tracking-wider ml-1">Full Name</label>
-                                        <input type="text" className="w-full bg-white/50 border border-white/40 rounded-lg px-4 py-3 text-heading focus:outline-none focus:border-cta/50 focus:bg-white/60 transition-all placeholder:text-gray-500" placeholder="Enter your name" />
-                                    </div>
-                                    <div className="space-y-1">
-                                        <label className="text-xs text-body-text uppercase tracking-wider ml-1">Phone Number</label>
-                                        <input type="tel" className="w-full bg-white/50 border border-white/40 rounded-lg px-4 py-3 text-heading focus:outline-none focus:border-cta/50 focus:bg-white/60 transition-all placeholder:text-gray-500" placeholder="+91 ..." />
-                                    </div>
-                                    <div className="pt-2">
-                                        <button className="w-full bg-cta hover:bg-rose text-white font-bold py-4 rounded-lg transition-all duration-300 uppercase tracking-[0.15em] text-xs flex items-center justify-center gap-2 group">
-                                            Get Quote <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
+                            {/* Editorial Insight Block */}
+                            <DesignGuidanceBlock productId={product.id} />
 
 
 

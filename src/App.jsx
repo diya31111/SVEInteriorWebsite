@@ -9,6 +9,7 @@ import ProductDetail from './pages/ProductDetail';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import AdminLeads from './pages/AdminLeads';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import SmoothScroll from './components/SmoothScroll';
@@ -31,6 +32,7 @@ function App() {
             <Route path="/our-gallery" element={<Gallery />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/admin/leads" element={<AdminLeads />} />
           </Routes>
         </AnimatePresence>
         <BackToTop />

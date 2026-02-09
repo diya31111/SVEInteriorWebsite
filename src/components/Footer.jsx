@@ -50,8 +50,15 @@ export default function Footer() {
                     <h4 className="text-xl font-serif font-bold mb-6 text-gold">Contact Us</h4>
                     <ul className="space-y-4">
                         <li className="flex items-start gap-3 text-white/80">
-                            <MapPin className="text-gold mt-1 flex-shrink-0" size={20} />
-                            <p>264, Gurunanakpura, Nr. Pranami Mandir, Raja Park, Jaipur - (302004)</p>
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=264,+Gurunanakpura,+Nr.+Pranami+Mandir,+Raja+Park,+Jaipur"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-start gap-3 hover:text-white transition-colors"
+                            >
+                                <MapPin className="text-gold mt-1 flex-shrink-0 group-hover:text-cta transition-colors" size={20} />
+                                <p>264, Gurunanakpura, Nr. Pranami Mandir, Raja Park, Jaipur - (302004)</p>
+                            </a>
                         </li>
                         <li className="flex items-center gap-3 text-white/80">
                             <Phone className="text-gold flex-shrink-0" size={20} />
