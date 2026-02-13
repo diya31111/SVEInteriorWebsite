@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import BrandPartners from '../components/BrandPartners';
 
 const stats = [
     { label: "Years Experience", value: 20, suffix: "+", width: "85%" },
@@ -174,6 +175,9 @@ export default function About() {
                     </div>
                 </div>
             </section>
+
+            {/* Premium Partners */}
+            <BrandPartners />
         </div>
     );
 }

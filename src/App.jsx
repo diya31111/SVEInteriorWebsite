@@ -9,6 +9,7 @@ import ProductDetail from './pages/ProductDetail';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import AdminLeads from './pages/AdminLeads';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
@@ -28,10 +29,12 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<About />} />
             <Route path="/our-products" element={<Products />} />
+            <Route path="/collections/:id" element={<ProductDetail />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/our-gallery" element={<Gallery />} />
             <Route path="/contact-us" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/admin/leads" element={<AdminLeads />} />
           </Routes>
         </AnimatePresence>

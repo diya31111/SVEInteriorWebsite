@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { products } from '../data/products';
 
+
 export default function Products() {
     const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -23,10 +24,10 @@ export default function Products() {
                 {/* Simple Grid */}
                 <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
                     {products.map((product) => (
-                        <div
+                        <Link
                             key={product.id}
-                            onClick={() => setSelectedProduct(product)}
-                            className="break-inside-avoid mb-8 cursor-pointer group"
+                            to={`/collections/${product.id}`}
+                            className="break-inside-avoid mb-8 cursor-pointer group block"
                         >
                             <div className="relative overflow-hidden rounded-xl bg-gray-100 aspect-square md:aspect-[3/4] shadow-sm hover:shadow-md transition-all duration-300 border border-soft-border">
                                 <img
@@ -41,68 +42,11 @@ export default function Products() {
                                     <p className="text-body-text text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-1">Tap for summary</p>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 
-                {/* Product Summary Modal */}
-                <AnimatePresence>
-                    {selectedProduct && (
-                        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-                            {/* Backdrop */}
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                onClick={() => setSelectedProduct(null)}
-                                className="absolute inset-0 bg-black/40 backdrop-blur-sm"
-                            />
 
-                            {/* Modal Content */}
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.95, y: 20 }}
-                                animate={{ opacity: 1, scale: 1, y: 0 }}
-                                exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                                className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden flex flex-col max-h-[90vh]"
-                            >
-                                {/* Close Button */}
-                                <button
-                                    onClick={() => setSelectedProduct(null)}
-                                    className="absolute top-4 right-4 z-10 p-2 bg-white/50 hover:bg-white rounded-full transition-colors text-heading"
-                                >
-                                    <X size={20} />
-                                </button>
-
-                                {/* Image */}
-                                <div className="h-64 sm:h-80 shrink-0 relative">
-                                    <img
-                                        src={selectedProduct.image}
-                                        alt={selectedProduct.title}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-
-                                {/* Content */}
-                                <div className="p-8 overflow-y-auto">
-                                    <span className="text-cta text-xs tracking-[0.2em] font-bold uppercase block mb-2">Collection</span>
-                                    <h3 className="text-3xl font-serif text-heading mb-4">{selectedProduct.title}</h3>
-                                    <p className="text-body-text leading-relaxed mb-8">
-                                        {selectedProduct.description}
-                                    </p>
-
-                                    <div className="flex gap-4">
-                                        <Link
-                                            to={`/product/${selectedProduct.id}`}
-                                            className="flex-1 bg-cta text-white text-center py-3 rounded-lg uppercase tracking-widest text-xs font-bold hover:bg-rose transition-colors"
-                                        >
-                                            View Full Details
-                                        </Link>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        </div>
-                    )}
-                </AnimatePresence>
 
             </div>
         </div>

@@ -51,7 +51,7 @@ export default function Footer() {
                     <ul className="space-y-4">
                         <li className="flex items-start gap-3 text-white/80">
                             <a
-                                href="https://www.google.com/maps/search/?api=1&query=264,+Gurunanakpura,+Nr.+Pranami+Mandir,+Raja+Park,+Jaipur"
+                                href="https://www.google.com/maps?ll=26.897183,75.82338&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=8850461807855850541"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group flex items-start gap-3 hover:text-white transition-colors"

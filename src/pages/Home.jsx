@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Ruler, HardHat, Hammer } from 'lucide-react';
+import { useState } from 'react';
 import { products } from '../data/products';
+
 import WhyChooseUs from '../components/WhyChooseUs';
 import Stats from '../components/Stats';
 import BrandTicker from '../components/BrandTicker';
 import BeforeAfter from '../components/BeforeAfter';
+import ClientShowcase from '../components/ClientShowcase';
+import ShowroomGallery from '../components/ShowroomGallery';
 import ShinyText from '../components/react-bits/ShinyText';
 import BlurText from '../components/react-bits/BlurText';
 import MagneticButton from '../components/react-bits/MagneticButton';
@@ -103,47 +107,55 @@ export default function Home() {
                         {/* Left Column */}
                         <div className="flex flex-col gap-6">
                             {/* Tall Item */}
-                            <div className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[300px] md:h-[376px]">
-                                <Link to={`/product/${products[0].id}`} className="absolute inset-0 z-20"></Link>
+                            <Link
+                                to={`/collections/${products[0].id}`}
+                                className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[300px] md:h-[376px] block"
+                            >
                                 <img src={products[0].image} alt="Luxury Interior" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80 transition-opacity"></div>
                                 <div className="absolute bottom-8 left-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                     <h3 className="text-3xl font-serif text-white mb-2">{products[0].title}</h3>
                                     <p className="text-white/80 text-xs max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed">{products[0].description}</p>
                                 </div>
-                            </div>
+                            </Link>
                             {/* Short Item */}
-                            <div className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[200px] md:h-[200px]">
-                                <Link to={`/product/${products[1].id}`} className="absolute inset-0 z-20"></Link>
+                            <Link
+                                to={`/collections/${products[1].id}`}
+                                className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[200px] md:h-[200px] block"
+                            >
                                 <img src={products[1].image} alt="Wallpapers" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div className="absolute bottom-6 left-8">
                                     <h3 className="text-2xl font-serif text-white">{products[1].title}</h3>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
 
                         {/* Right Column */}
                         <div className="flex flex-col gap-6">
                             {/* Short Item */}
-                            <div className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[200px] md:h-[200px]">
-                                <Link to={`/product/${products[2].id}`} className="absolute inset-0 z-20"></Link>
+                            <Link
+                                to={`/collections/${products[2].id}`}
+                                className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[200px] md:h-[200px] block"
+                            >
                                 <img src={products[2].image} alt="Blinds" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div className="absolute bottom-6 left-8">
                                     <h3 className="text-2xl font-serif text-white">{products[2].title}</h3>
                                 </div>
-                            </div>
+                            </Link>
                             {/* Tall Item */}
-                            <div className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[300px] md:h-[376px]">
-                                <Link to={`/product/${products[4].id}`} className="absolute inset-0 z-20"></Link>
+                            <Link
+                                to={`/collections/${products[4].id}`}
+                                className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[300px] md:h-[376px] block"
+                            >
                                 <img src={products[4].image} alt="Flooring" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 <div className="absolute bottom-8 left-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                     <h3 className="text-3xl font-serif text-white mb-2">{products[4].title}</h3>
                                     <p className="text-white/80 text-xs max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed">{products[4].description}</p>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -225,24 +237,16 @@ export default function Home() {
 
             {/* Company Photo Section */}
             {/* Company Photo Section */}
-            <section className="py-24 bg-blush/20">
-                <div className="container mx-auto px-6">
-                    <div className="text-center mb-12">
-                        <span className="text-gold tracking-[0.2em] uppercase text-xs font-bold block mb-4">Our Team</span>
-                        <h2 className="text-3xl md:text-4xl font-serif text-heading">The People Behind the <span className="italic text-body-text">Passion</span></h2>
-                    </div>
-                </div>
-                {/* Full Width Image Container */}
-                <div className="w-full relative h-[60vh] md:h-[80vh]">
-                    <img
-                        src="/src/assets/company.jpeg"
-                        alt="The SVE Interior Team"
-                        className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-                </div>
-            </section>
 
-        </div>
+
+            {/* Clients Grid Removed */}
+
+            {/* Showroom Gallery */}
+            <ShowroomGallery />
+
+            {/* Client Showcase */}
+            <ClientShowcase />
+
+        </div >
     );
 }

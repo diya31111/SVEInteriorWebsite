@@ -1,0 +1,76 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
+// Import local assets
+import adaniLogo from '../assets/companyphotos/Adani.png';
+import agrawalLogo from '../assets/companyphotos/Agrawal-Pg-College.png';
+import auBankLogo from '../assets/companyphotos/Au-Small-Finance.png';
+import audiLogo from '../assets/companyphotos/Audi.png';
+import bhamashahLogo from '../assets/companyphotos/Bhamashah-Technohub.png';
+import gravitaLogo from '../assets/companyphotos/Gravita.png';
+import hgielLogo from '../assets/companyphotos/Hgiel.png';
+import hondaLogo from '../assets/companyphotos/Honda.png';
+import jayshreeLogo from '../assets/companyphotos/Jayshree-Periwal-International-School.png';
+import kiaLogo from '../assets/companyphotos/Kia.png';
+import manglamLogo from '../assets/companyphotos/Manglam-Radiance.png';
+import nexaLogo from '../assets/companyphotos/Nexa.png';
+import nirvanaLogo from '../assets/companyphotos/Nirvana.png';
+import rkMarbleLogo from '../assets/companyphotos/RK-Marble.png';
+import radissonLogo from '../assets/companyphotos/Radisson.png';
+import sbiLogo from '../assets/companyphotos/Sbi-logo.png';
+import shahpuraLogo from '../assets/companyphotos/Shahpura-Hotels.png';
+import xaviersLogo from '../assets/companyphotos/St.xaviers-College.png';
+import tholiasLogo from '../assets/companyphotos/Tholias-Kuber.png';
+import cheerSagarLogo from '../assets/companyphotos/cheer-Sagar.png';
+import theLegendLogo from '../assets/companyphotos/the-Legend.png';
+
+const clients = [
+    { name: "Radisson", logo: radissonLogo },
+    { name: "SBI", logo: sbiLogo },
+    { name: "KIA", logo: kiaLogo },
+    { name: "Honda", logo: hondaLogo },
+    { name: "Audi", logo: audiLogo },
+    { name: "NEXA", logo: nexaLogo },
+    { name: "RK Marble", logo: rkMarbleLogo },
+    { name: "AU Small Finance Bank", logo: auBankLogo },
+    { name: "Adani", logo: adaniLogo },
+    { name: "Gravita", logo: gravitaLogo },
+    { name: "Tholia's Kuber", logo: tholiasLogo },
+    { name: "Agrawal PG College", logo: agrawalLogo },
+    { name: "Bhamashah Technohub", logo: bhamashahLogo },
+    { name: "HGIEL", logo: hgielLogo },
+    { name: "Jayshree Periwal Int. School", logo: jayshreeLogo },
+    { name: "Manglam Radiance", logo: manglamLogo },
+    { name: "Nirvana", logo: nirvanaLogo },
+    { name: "Shahpura Hotels", logo: shahpuraLogo },
+    { name: "St. Xavier's College", logo: xaviersLogo },
+    { name: "Cheer Sagar", logo: cheerSagarLogo },
+    { name: "The Legend", logo: theLegendLogo }
+];
+
+export default function ClientShowcase() {
+    return (
+        <section className="py-20 bg-white border-t border-soft-border">
+            <div className="container mx-auto px-6">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl font-serif text-heading tracking-wide">Our Prestigious <span className="italic text-cta">Clients</span></h2>
+                </div>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center items-center">
+                    {clients.map((client, index) => (
+                        <div
+                            key={index}
+                            className="bg-white border border-gray-100 p-6 flex items-center justify-center rounded-sm h-32 transition-all duration-300 group cursor-default"
+                        >
+                            <img
+                                src={client.logo}
+                                alt={client.name}
+                                className="max-h-12 w-auto max-w-full"
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
