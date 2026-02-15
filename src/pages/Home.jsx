@@ -9,7 +9,7 @@ import Stats from '../components/Stats';
 import BrandTicker from '../components/BrandTicker';
 import BeforeAfter from '../components/BeforeAfter';
 import ClientShowcase from '../components/ClientShowcase';
-import ShowroomGallery from '../components/ShowroomGallery';
+
 import ShinyText from '../components/react-bits/ShinyText';
 import BlurText from '../components/react-bits/BlurText';
 import MagneticButton from '../components/react-bits/MagneticButton';
@@ -241,8 +241,6 @@ export default function Home() {
 
             {/* Clients Grid Removed */}
 
-            {/* Showroom Gallery */}
-            <ShowroomGallery />
 
             {/* Client Showcase */}
             <ClientShowcase />

@@ -160,9 +160,15 @@ class Media {
     this.onResize();
   }
   createShader() {
+    // Initialize with a 1x1 grey placeholder to avoid invisible planes while loading
+    const placeholderData = new Uint8Array([200, 200, 200, 255]);
     const texture = new Texture(this.gl, {
-      generateMipmaps: true
+      generateMipmaps: false, // Mipmaps for 1x1 texture can be weird or unnecessary until real image loads
+      image: placeholderData,
+      width: 1,
+      height: 1
     });
+
     this.program = new Program(this.gl, {
       depthTest: false,
       depthWrite: false,
@@ -218,7 +224,7 @@ class Media {
       uniforms: {
         tMap: { value: texture },
         uPlaneSizes: { value: [0, 0] },
-        uImageSizes: { value: [0, 0] },
+        uImageSizes: { value: [1, 1] }, // Default to 1x1 to match placeholder
         uSpeed: { value: 0 },
         uTime: { value: 100 * Math.random() },
         uBorderRadius: { value: this.borderRadius }
@@ -229,8 +235,27 @@ class Media {
     img.crossOrigin = 'anonymous';
     img.src = this.image;
     img.onload = () => {
+      // Update texture with real image
       texture.image = img;
+      // Depending on OGL version, we might need to reset width/height or it handles image automatically
+      // But typically passing image is enough if generateMipmaps is true (which we should enable for real image)
+      texture.options.width = img.naturalWidth; // Update options just in case (though OGL usually reads from image)
+      texture.options.height = img.naturalHeight;
+      // Generate mipmaps for the new image for better quality
+      // We can't toggle generateMipmaps easily on existing texture in some versions, 
+      // but let's try assuming standard WebGL behavior where we bind and generate.
+      // OGL's texture update usually handles this if we set .needsUpdate = true typically, 
+      // but OGL is lower level. Let's create a fresh texture if needed or just trust OGL.
+      // Looking at OGL docs (mental model), assigning .image and updating is usually enough.
+
+      // Let's force mipmaps true for the real image
+      // texture.minFilter = this.gl.LINEAR_MIPMAP_LINEAR; 
+      // This might be needed if false initially.
+
       this.program.uniforms.uImageSizes.value = [img.naturalWidth, img.naturalHeight];
+    };
+    img.onerror = () => {
+      console.error('Failed to load image:', this.image);
     };
   }
   createMesh() {

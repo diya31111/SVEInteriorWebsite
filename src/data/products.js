@@ -107,9 +107,9 @@ export const products = [
     {
         id: "acoustic-panels",
         title: "Acoustic Panels",
-        image: "https://images.unsplash.com/photo-1594218698688-6d25287d9830?q=80&w=1200&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
         gallery: [
-            "https://images.unsplash.com/photo-1594218698688-6d25287d9830?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1520699049698-386033877076?q=80&w=1200&auto=format&fit=crop"
         ],

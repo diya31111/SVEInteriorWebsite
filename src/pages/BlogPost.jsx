@@ -6,16 +6,26 @@ import BlogCard from '../components/BlogCard';
 
 export default function BlogPost() {
     const { id } = useParams();
-    const post = posts.find(p => p.id === parseInt(id));
+    const post = posts.find(p => p.id === id);
 
     // Suggest 3 other posts
     const relatedPosts = posts
-        .filter(p => p.id !== parseInt(id))
+        .filter(p => p.id !== id)
         .sort(() => 0.5 - Math.random())
         .slice(0, 3);
 
     if (!post) {
-        return <div className="min-h-screen grid place-items-center text-heading">Post not found</div>;
+        return (
+            <div className="min-h-screen grid place-items-center bg-white">
+                <div className="text-center">
+                    <h1 className="text-4xl font-serif text-heading mb-4">Post Not Found</h1>
+                    <p className="text-body-text mb-8">The article you're looking for doesn't exist.</p>
+                    <Link to="/blog" className="text-cta uppercase tracking-widest text-xs font-bold hover:opacity-70 transition-opacity">
+                        ← Back to Blog
+                    </Link>
+                </div>
+            </div>
+        );
     }
 
     return (
@@ -27,8 +37,8 @@ export default function BlogPost() {
                     alt={post.title}
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/40"></div>
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+                <div className="absolute inset-0 flex flex-col justify-end items-center text-center px-6 pb-16">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -38,10 +48,10 @@ export default function BlogPost() {
                         <span className="text-white/80 tracking-[0.2em] uppercase text-sm font-bold block mb-4">
                             {post.category}
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-serif text-white mb-6 leading-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-white mb-6 leading-tight">
                             {post.title}
                         </h1>
-                        <div className="flex items-center justify-center gap-6 text-white/80 text-sm">
+                        <div className="flex items-center justify-center gap-6 text-white/70 text-sm">
                             <span className="flex items-center gap-2"><Clock size={14} /> {post.date}</span>
                             <span className="flex items-center gap-2"><Tag size={14} /> {post.category || "Interior"}</span>
                         </div>
@@ -55,19 +65,31 @@ export default function BlogPost() {
                 </Link>
 
                 {/* Article Content */}
-                <article className="max-w-3xl mx-auto prose prose-lg prose-headings:font-serif prose-p:font-light prose-p:text-body-text prose-a:text-cta mb-24">
-                    <p className="lead text-xl md:text-2xl font-serif italic text-heading mb-10 leading-relaxed">
+                <article className="max-w-3xl mx-auto mb-24">
+                    {/* Lead excerpt */}
+                    <p className="text-xl md:text-2xl font-serif italic text-heading mb-12 leading-relaxed border-l-4 border-cta/30 pl-6">
                         {post.excerpt}
                     </p>
-                    <div className="whitespace-pre-wrap text-lg leading-loose text-body-text">
-                        {post.content || "Content for this article is being updated. Please check back soon for the full story."}
-                    </div>
+
+                    {/* HTML Content */}
+                    <div
+                        className="prose prose-lg max-w-none
+                            prose-headings:font-serif prose-headings:text-heading prose-headings:font-bold
+                            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
+                            prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4
+                            prose-p:text-body-text prose-p:font-light prose-p:leading-loose prose-p:text-lg prose-p:mb-6
+                            prose-li:text-body-text prose-li:font-light prose-li:text-base prose-li:leading-relaxed
+                            prose-strong:text-heading prose-strong:font-semibold
+                            prose-a:text-cta prose-a:no-underline hover:prose-a:underline
+                            prose-ul:my-6 prose-ul:space-y-2"
+                        dangerouslySetInnerHTML={{ __html: post.content }}
+                    />
                 </article>
 
                 {/* Related Posts */}
                 <div className="border-t border-soft-border pt-16">
                     <h3 className="text-3xl font-serif text-heading mb-12 text-center">More from the Journal</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {relatedPosts.map(p => (
                             <div key={p.id} className="h-full">
                                 <BlogCard post={p} />

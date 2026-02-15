@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { galleryImages } from '../data/gallery';
 import BlurText from '../components/react-bits/BlurText';
+import CircularGallery from '../components/react-bits/CircularGallery';
 
 export default function Gallery() {
     // Map gallery images to CircularGallery format
@@ -18,6 +19,8 @@ export default function Gallery() {
         <div className="bg-blush min-h-screen pt-32 pb-20">
             <div className="container mx-auto px-6 mb-12">
                 <BlurText
+                    text="Our Gallery"
+                    className="text-4xl md:text-5xl font-serif text-heading mb-8 text-center"
                     delay={15}
                     animateBy="words"
                     direction="top"
@@ -34,7 +37,7 @@ export default function Gallery() {
                     items={circularItems}
                     bend={2}
                     textColor="#7A5C58" // using text-heading hex directly as it might be passed to canvas/webgl
-                    borderRadius={500}
+                    borderRadius={0.05}
                     font="bold 40px serif" // Larger, serif font for luxury feel
                 />
             </div>

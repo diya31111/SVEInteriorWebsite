@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion';
 import { posts } from '../data/posts';
 import BlogCard from '../components/BlogCard';
-import { ArrowUpRight } from 'lucide-react';
 
 export default function Blog() {
     return (
-        <div className="bg-white min-h-screen pt-32 pb-20">
+        <div className="bg-white min-h-screen pt-32 pb-24">
             {/* Header */}
-            <div className="container mx-auto px-6 mb-20 text-center relative">
+            <div className="container mx-auto px-6 mb-24 text-center relative">
                 <motion.span
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -33,16 +32,16 @@ export default function Blog() {
                 </motion.p>
             </div>
 
-            {/* Editorial Grid */}
-            <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            {/* Editorial Grid — 3 columns with generous whitespace */}
+            <div className="container mx-auto px-6 lg:px-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
                     {posts.map((post, index) => (
                         <motion.div
                             key={post.id}
-                            initial={{ opacity: 0, y: 30 }}
+                            initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.05, duration: 0.6 }}
+                            transition={{ delay: index * 0.08, duration: 0.6 }}
                             className="h-full"
                         >
                             <BlogCard post={post} />
