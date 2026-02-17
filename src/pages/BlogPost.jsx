@@ -2,7 +2,6 @@ import { useParams, Link } from 'react-router-dom';
 import { posts } from '../data/posts';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, Tag } from 'lucide-react';
-import BlogCard from '../components/BlogCard';
 
 export default function BlogPost() {
     const { id } = useParams();
@@ -84,16 +83,45 @@ export default function BlogPost() {
                             prose-ul:my-6 prose-ul:space-y-2"
                         dangerouslySetInnerHTML={{ __html: post.content }}
                     />
+
+                    {/* SEO Keyword Tags */}
+                    {post.tags && post.tags.length > 0 && (
+                        <div className="mt-12 pt-8 border-t border-soft-border">
+                            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-heading mb-4">Tags</h4>
+                            <div className="flex flex-wrap gap-2">
+                                {post.tags.map((tag, i) => (
+                                    <span
+                                        key={i}
+                                        className="inline-block bg-cta text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-sm"
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </article>
 
                 {/* Related Posts */}
                 <div className="border-t border-soft-border pt-16">
                     <h3 className="text-3xl font-serif text-heading mb-12 text-center">More from the Journal</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                        {relatedPosts.map(p => (
-                            <div key={p.id} className="h-full">
-                                <BlogCard post={p} />
-                            </div>
+                    <div className="space-y-12">
+                        {relatedPosts.map((p, i) => (
+                            <Link
+                                key={p.id}
+                                to={`/blog/${p.id}`}
+                                className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-0 border border-soft-border rounded-xl overflow-hidden bg-white hover:shadow-xl transition-shadow duration-500 group block`}
+                            >
+                                <div className="w-full md:w-1/2 overflow-hidden">
+                                    <img src={p.image} alt={p.title} className="w-full h-full min-h-[240px] object-cover transition-transform duration-700 group-hover:scale-105" />
+                                </div>
+                                <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
+                                    <span className="text-cta tracking-widest uppercase text-[10px] font-bold block mb-2">{p.category}</span>
+                                    <h4 className="text-lg font-bold uppercase tracking-wide text-heading mb-3 group-hover:text-cta transition-colors">{p.title}</h4>
+                                    <div className="w-full h-px bg-soft-border mb-3"></div>
+                                    <p className="text-body-text text-sm font-light leading-relaxed line-clamp-2">{p.excerpt}</p>
+                                </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

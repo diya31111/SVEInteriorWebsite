@@ -1,11 +1,123 @@
 export const posts = [
     {
+        id: "premier-home-furnishing-showroom",
+        title: "THE PREMIER HOME FURNISHING SHOWROOM IN RAJA PARK, JAIPUR",
+        category: "HOME FURNISHING",
+        date: "March 15, 2024",
+        image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+        excerpt: "In the heart of Raja Park, Jaipur, lies a treasure trove of exquisite home furnishings and décor – SVE Interior. Renowned for its impeccable taste, unparalleled quality, and exceptional customer service, SVE Interior has established itself as the premier destination for homeowners looking to elevate their living spaces.",
+        tags: ["Designer Sofa Fabrics in Raja Park", "Home Furnishing Showroom in Raja Park", "Home Furnishing Store in Jaipur", "Home Furnishing Store in Raja Park", "Luxury Interior Product Showroom in Jaipur", "Luxury Interior Product Showroom in Raja Park"],
+        content: `
+            <p class="lead">In the heart of Raja Park, Jaipur, lies a treasure trove of exquisite home furnishings and décor – SVE Interior. Renowned for its impeccable taste, unparalleled quality, and exceptional customer service, SVE Interior has established itself as the premier destination for homeowners looking to elevate their living spaces.</p>
+
+            <p>From luxurious furniture pieces to captivating décor accents, SVE Interior offers a curated selection of products that cater to the diverse tastes and preferences of its clientele. Join us as we delve into the world of SVE Interior and uncover the secrets behind its success as the best home furnishing showroom in Raja Park.</p>
+
+            <h2>A Legacy of Excellence</h2>
+            <p>With a legacy spanning over a decade, SVE Interior has set the benchmark for excellence in Home Furnishing. Founded by a team of passionate design enthusiasts, the showroom has consistently delivered unparalleled quality and craftsmanship in every product it offers. Over the years, SVE Interior has earned the trust and admiration of homeowners and interior designers alike, establishing itself as a trusted name in the industry.</p>
+
+            <h2>Expansive Product Range</h2>
+            <p>At SVE Interior, customers are treated to a vast array of home furnishing options that cater to every style and budget. Whether you prefer contemporary elegance, classic charm, or eclectic flair, SVE Interior has something to suit every taste. From sumptuous sofas and elegant dining sets to exquisite rugs and captivating wall art, the showroom offers a comprehensive range of products that are carefully curated to reflect the latest trends in home décor.</p>
+
+            <h2>Quality Craftsmanship</h2>
+            <p>One of the hallmarks of SVE Interior is its unwavering commitment to quality craftsmanship. Each product in the showroom is crafted with the utmost care and attention to detail, using only the finest materials and techniques. Whether it's handcrafted wooden furniture, intricately woven textiles, or artisanal décor pieces, every item at SVE Interior exudes quality and refinement.</p>
+            <p>Customers can rest assured that their purchases from SVE Interior are not just stylish additions to their homes but also investments in long-lasting beauty and durability.</p>
+
+            <h2>Personalized Service</h2>
+            <p>At SVE Interior, every customer is treated with the utmost care and attention. The showroom's team of experienced design consultants is dedicated to helping customers find the perfect pieces to complement their homes. Whether you're seeking advice on color palettes, furniture arrangements, or décor accents, the knowledgeable staff at SVE Interior is always on hand to offer expert guidance and recommendations tailored to your individual needs and preferences.</p>
+
+            <h2>Innovative Design Solutions</h2>
+            <p>In addition to its extensive product range, SVE Interior offers innovative design solutions to help customers bring their vision to life. Whether you're embarking on a full-scale home renovation or simply looking to refresh a room, the showroom's in-house design team can assist you every step of the way. From concept development and space planning to furniture selection and styling, the talented designers at SVE Interior work closely with clients to create bespoke interiors that reflect their unique personality and lifestyle.</p>
+
+            <h2>Customer Satisfaction</h2>
+            <p>At the heart of SVE Interior's success is its unwavering commitment to customer satisfaction. From the moment you step into the showroom to the delivery of your purchases, every aspect of your experience with SVE Interior is carefully curated to ensure your complete satisfaction. Whether you're furnishing a new home, renovating an existing space, or simply seeking inspiration for your next design project, SVE Interior is dedicated to helping you create the home of your dreams.</p>
+
+            <p>SVE Interior stands as a beacon of excellence in the world of home furnishings. With its expansive product range, quality craftsmanship, personalized service, innovative design solutions, and unwavering commitment to customer satisfaction, SVE Interior has earned its reputation as the best home furnishing showroom in Jaipur.</p>
+        `
+    },
+    {
+        id: "10-reasons-wooden-flooring",
+        title: "10 REASONS TO CHOOSE WOODEN FLOORING FOR YOUR HOME OR OFFICE!",
+        category: "FLOORING",
+        date: "February 8, 2024",
+        image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200&auto=format&fit=crop",
+        excerpt: "Wooden flooring is a popular choice for both residential and commercial spaces, and it's easy to see why. Not only is it stylish and versatile, but it also offers a range of benefits that make it an ideal choice for any interior.",
+        tags: ["Designer Sofa Fabrics in Jaipur", "Greenpanel Wooden Flooring in Jaipur", "Office Window Curtains", "Stretch Ceiling for Office", "Wooden Flooring Dealer in Jaipur", "Wooden Flooring Distributor in Jaipur"],
+        content: `
+            <p class="lead">Wooden flooring is a popular choice for both residential and commercial spaces, and it's easy to see why. Not only is it stylish and versatile, but it also offers a range of benefits that make it an ideal choice for any interior. In this blog, we'll be exploring 10 of the top reasons to choose wooden flooring for your home or office.</p>
+
+            <h2>1. Durability and Longevity</h2>
+            <p>One of the main advantages of wooden flooring is its durability and longevity. Unlike carpet or other flooring materials, wooden flooring can last for decades with proper care and maintenance. This makes it a cost-effective option in the long run, as you won't have to replace it as often as other flooring options. Additionally, wooden flooring is resistant to wear and tear, making it ideal for high-traffic areas.</p>
+
+            <h2>2. Easy to Clean and Maintain</h2>
+            <p>Another benefit of wooden flooring is its ease of cleaning and maintenance. Unlike carpet, which can trap dirt and allergens, wooden flooring is easy to sweep and mop, keeping it looking clean and hygienic. Additionally, wooden flooring is resistant to spills and stains, making it ideal for homes with pets or children.</p>
+
+            <h2>3. Adds Value to Your Home or Office</h2>
+            <p>Wooden flooring can add value to your home or office in a number of ways. Not only does it look stylish and elegant, but it also increases the resale value of your property. When it comes to choosing flooring for your home or office, wooden flooring is a wise investment that will pay off in the long run.</p>
+
+            <h2>4. Environmentally Friendly</h2>
+            <p>Wooden flooring is an environmentally friendly option, as it's made from a renewable resource. Additionally, many wooden flooring manufacturers are committed to using sustainable materials and practices, reducing their impact on the environment. When you choose wooden flooring, you can feel good about making an environmentally responsible choice.</p>
+
+            <h2>5. Versatile and Customizable</h2>
+            <p>Wooden flooring is versatile and customizable, making it ideal for any interior style. Whether you prefer a traditional or modern look, there is a wooden flooring option to suit your taste. Additionally, wooden flooring comes in a range of finishes, colors, and textures, allowing you to create a unique and personalized look for your home or office.</p>
+
+            <h2>6. Aesthetic Appeal</h2>
+            <p>Wooden flooring has a timeless and classic appeal that adds warmth and character to any space. Whether you prefer a light and airy look or a rich and dark tone, there is a wooden flooring option to suit your aesthetic preferences. Additionally, wooden flooring can enhance the overall design of your home or office, making it a stylish and attractive choice.</p>
+
+            <h2>7. Improved Indoor Air Quality</h2>
+            <p>Wooden flooring can also improve indoor air quality, as it doesn't trap dust, dirt, and allergens like carpet or other flooring materials. This makes it ideal for homes or offices with allergies or sensitivities, as it helps to keep the air clean and fresh.</p>
+
+            <h2>8. Comfort and Warmth</h2>
+            <p>Wooden flooring can also provide comfort and warmth underfoot, especially during the colder months. Unlike ceramic or stone tiles, which can feel cold and hard, wooden flooring provides a warm and cozy feel. Additionally, wooden flooring can help to insulate your home or office, reducing energy costs.</p>
+
+            <h2>9. Low Maintenance</h2>
+            <p>In terms of maintenance, wooden flooring is a low-maintenance option. Unlike carpet, which requires regular cleaning and shampooing, wooden flooring simply needs to be swept and mopped. Additionally, wooden flooring is resistant to scratches, dents, and other forms of damage.</p>
+
+            <h2>10. Wide Range of Options</h2>
+            <p>Finally, wooden flooring comes in a wide range of options, including engineered wood, laminate, and solid hardwood. This means that there is a wooden flooring option to suit every budget and preference, making it an accessible choice for homeowners and businesses alike.</p>
+        `
+    },
+    {
+        id: "tensile-structure-manufacturers-rajasthan",
+        title: "TENSILE STRUCTURE MANUFACTURERS IN RAJASTHAN",
+        category: "OUTDOOR STRUCTURES",
+        date: "January 20, 2024",
+        image: "https://images.unsplash.com/photo-1596245970222-54fb0199e433?q=80&w=1200&auto=format&fit=crop",
+        excerpt: "Tensile Structure Manufacturers have become increasingly popular in recent years as a cost-effective and aesthetically pleasing solution for providing shade and shelter. They are used in a variety of applications, from car parks to sports facilities.",
+        tags: ["Best Home Furnishing Showroom in Jaipur", "Designer Sofa Fabrics in Jaipur", "Outdoor Deckwood in Jaipur", "Stretch Ceiling Supplier in Jaipur", "Tensile Structure Manufacturers in Jaipur", "Tensile Structure Manufacturers in Rajasthan", "Wooden Flooring Distributor in Jaipur"],
+        content: `
+            <p class="lead">Tensile Structure Manufacturers have become increasingly popular in recent years as a cost-effective and aesthetically pleasing solution for providing shade and shelter. They are used in a variety of applications, from car parks to sports facilities, and offer a range of benefits, including flexibility, durability, and resistance to weather and corrosion.</p>
+
+            <p>If you're in the market for a tensile structure, it's important to find a reliable and experienced manufacturer to ensure the best possible outcome. In this blog, we'll discuss some of the key considerations when choosing a Tensile Structure Manufacturer in Rajasthan.</p>
+
+            <h2>What to Consider When Choosing a Tensile Structure Manufacturer</h2>
+
+            <h3>1. Experience</h3>
+            <p>Experience is key when choosing a tensile structure manufacturer. A manufacturer with a long track record of successful projects is more likely to deliver a high-quality and reliable product. Look for a manufacturer that has experience in your specific area of interest, whether it be sports facilities, car parks, or entrance canopies.</p>
+
+            <h3>2. Reputation</h3>
+            <p>Reputation is also important when choosing a tensile structure manufacturer. Look for a manufacturer with a positive reputation in the market, and read reviews from past clients to get a better understanding of their experience with the manufacturer.</p>
+
+            <h3>3. Quality of Materials</h3>
+            <p>The quality of materials used in the construction of a tensile structure is critical to its overall performance and durability. Look for a manufacturer that uses high-quality materials, such as steel, aluminium, or fiberglass, and ask about their materials selection process to ensure that you're getting the best possible product.</p>
+
+            <h3>4. Customer Service</h3>
+            <p>Customer service is also important when choosing a tensile structure manufacturer. Look for a manufacturer that provides a high level of support and responsiveness, and ask about their warranty and maintenance policies to ensure that you're getting a product that is backed by a reliable and responsive manufacturer.</p>
+
+            <h3>5. Design Capabilities</h3>
+            <p>A good tensile structure manufacturer should have the ability to design a structure that meets your specific requirements. Look for a manufacturer that has a team of experienced designers, and ask about their design process to ensure that they are capable of delivering a structure that meets your needs.</p>
+
+            <h2>Conclusion</h2>
+            <p>Tensile structures are an excellent solution for providing shade and shelter in a variety of applications. When choosing a tensile structure manufacturer, it's important to consider factors such as experience, reputation, quality of materials, design capabilities, and customer service. The top Tensile structure manufacturers in Rajasthan in the market today include SVE Interiors, among others. By choosing a reliable and experienced manufacturer, you can be confident that you're getting a high-quality and durable product that meets your specific needs.</p>
+        `
+    },
+
+    {
         id: "curtains-guide",
-        title: "A Complete Guide To Choosing The Right Curtains For Your Home",
+        title: "The Ultimate Guide to Choosing the Perfect Curtains for Your Dream Home",
         category: "HOME FURNISHING",
         date: "January 4, 2022",
         image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "Learn everything you need to know about curtains so you can choose the right ones for your home. From buying guides and measurements, to brands and styles, we have you covered.",
+        excerpt: "Discover complete interior solutions for your windows. Learn everything about choosing curtains with premium product quality—guided by balance between innovation and timelessness.",
         content: `
             <p class="lead">Imagine sleeping in on the weekend peacefully, dreaming of swimming in a heap of all your favorite snacks. You pick one up and are just about to take a big bite out of it when you're suddenly blinded with a strong light, waking you up to face reality. It's the bright sunlight!</p>
 
@@ -62,11 +174,11 @@ export const posts = [
     },
     {
         id: "pergola-manufacturers-jaipur",
-        title: "Pergola Manufacturers in Jaipur: Creating Outdoor Oasis",
+        title: "Expert Tips: How Top Pergola Manufacturers in Jaipur Create Stunning Outdoor Retreats",
         category: "OUTDOOR LIVING",
         date: "January 24, 2023",
         image: "https://images.unsplash.com/photo-1623625434462-e5e42318ae49?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "As the weather warms up, there is nothing quite like spending time in the great outdoors. Discover how pergolas can transform your outdoor space into a beautiful oasis.",
+        excerpt: "Transform your outdoor space into a stunning retreat with complete interior solutions from SVE Interior. Discover premium product quality pergolas designed for Jaipur's climate.",
         content: `
             <p class="lead">As the weather warms up, there is nothing quite like spending time in the great outdoors. Whether you are lounging by the pool, grilling up a barbecue, or simply enjoying the fresh air, having a comfortable and stylish outdoor space is essential.</p>
 
@@ -100,11 +212,11 @@ export const posts = [
     },
     {
         id: "wall-cladding-solutions",
-        title: "All You Need to Know About Wall Cladding Solutions",
+        title: "The Ultimate Guide to Premium Wall Cladding: Expert Solutions for Modern Interiors",
         category: "WALL DECOR",
         date: "February 3, 2023",
         image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "At SVE Interiors, there are many different types of cladding materials available, each with its own unique characteristics and advantages for modern construction.",
+        excerpt: "Explore our expert wall cladding solutions offering premium product quality. From metal to stone, discover complete interior solutions guided by balance—between innovation and timelessness.",
         content: `
             <p class="lead">Cladding refers to the application of one material over another to provide a protective layer or to enhance the appearance of a building. Cladding solutions are an important aspect of modern construction, providing a range of benefits such as insulation, weather protection, and a decorative finish.</p>
 
@@ -142,11 +254,11 @@ export const posts = [
     },
     {
         id: "stretch-ceilings",
-        title: "The Evolution of Stretch Ceilings in Modern Homes",
+        title: "Trending Now: How Stretch Ceilings Are Revolutionizing Luxury Home Design",
         category: "DESIGN TRENDS",
         date: "February 12, 2026",
         image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "Once reserved for commercial spaces, stretch ceilings are now transforming luxury homes. Discover how these reflective surfaces create depth and modern elegance.",
+        excerpt: "Once reserved for commercial spaces, stretch ceilings now deliver premium product quality to luxury homes. Discover how these complete interior solutions create depth and modern elegance.",
         content: `
             <p class="lead">Stretch ceilings have evolved significantly from their origins in commercial and hospitality settings. Today, they are one of the most sought-after ceiling solutions for luxury residential interiors, offering a seamless blend of aesthetics and functionality.</p>
 
@@ -181,11 +293,11 @@ export const posts = [
     },
     {
         id: "acoustic-panels",
-        title: "Why Acoustic Panels Are the New Must-Have for Homes & Offices",
+        title: "Expert Tips: Why Acoustic Panels Are the Ultimate Must-Have for Premium Homes & Offices",
         category: "WORKSPACES",
         date: "February 8, 2026",
         image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "As remote work becomes permanent, sound control is luxury. Modern acoustic panels blend art with functionality to create the perfect focus environment.",
+        excerpt: "Sound control meets premium product quality. Modern acoustic panels blend art with functionality, delivering complete interior solutions for the perfect focus environment.",
         content: `
             <p class="lead">Acoustic panels are no longer just for recording studios and conference rooms. With the rise of remote work and open-plan living, sound management has become a critical part of interior design. Modern acoustic panels combine engineering precision with stunning aesthetics to solve noise problems beautifully.</p>
 
@@ -221,7 +333,7 @@ export const posts = [
     },
     {
         id: "wooden-flooring-guide",
-        title: "Wooden Flooring: The Complete Guide to Engineered vs. Laminate",
+        title: "The Ultimate Guide to Premium Wooden Flooring: Choosing Between Engineered and Laminate for High-End Homes",
         category: "FLOORING",
         date: "December 15, 2025",
         image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200&auto=format&fit=crop",

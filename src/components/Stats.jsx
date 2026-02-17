@@ -38,10 +38,11 @@ export default function Stats() {
     return (
         <section className="bg-white border-y border-soft-border py-20">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <Counter value={4823} label="Completed Projects" />
-                    <Counter value={10000} label="Retail Customers" />
-                    <Counter value={7842} label="Customer Recommendations" />
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <Counter value={15} label="Years of Design Excellence" />
+                    <Counter value={15000} label="Successfully Completed Projects" />
+                    <Counter value={500} label="Corporate Clients Nationwide" />
+                    <Counter value={6000} label="Direct Customer Recommendations" />
                 </div>
             </div>
         </section>

@@ -1,172 +1,318 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { products } from '../data/products';
-import { motion, useMotionValue, useSpring } from 'framer-motion';
-import { ArrowLeft, User, Phone, Mail } from 'lucide-react';
-import BlurText from '../components/react-bits/BlurText';
-import DesignGuidanceBlock from '../components/DesignGuidanceBlock';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowLeft, ArrowRight, Award, CheckCircle, Sparkles } from 'lucide-react';
 
-// Window Pan Image Component
-const WindowPanImage = ({ src, alt, layoutId }) => {
-    const containerRef = useRef(null);
-    const x = useMotionValue(0);
-    const y = useMotionValue(0);
+// Ken Burns Hero Image with slow zoom
+const KenBurnsImage = ({ src, alt }) => (
+    <div className="relative w-full h-full overflow-hidden">
+        <motion.img
+            src={src}
+            alt={alt}
+            initial={{ scale: 1 }}
+            animate={{ scale: 1.08 }}
+            transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+            className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/15 to-transparent pointer-events-none" />
+    </div>
+);
 
-    // Smooth spring physics for laggy "pan" feel
-    const springX = useSpring(x, { stiffness: 100, damping: 30 });
-    const springY = useSpring(y, { stiffness: 100, damping: 30 });
+// Specification grid data per product
+const getSpecifications = (product) => ({
+    applications: product.bestUse?.includes("Commercial") || product.bestUse?.includes("Office") || product.bestUse?.includes("Hotel") || product.bestUse?.includes("Conference")
+        ? ["Residential", "Commercial"]
+        : ["Residential"],
+    craftsmanship: product.material?.includes("Wool") || product.material?.includes("Silk") || product.material?.includes("Velvet") || product.material?.includes("Natural")
+        ? "Bespoke"
+        : "Premium",
+});
 
-    const handleMouseMove = (e) => {
-        const { left, top, width, height } = containerRef.current.getBoundingClientRect();
-        const centerX = left + width / 2;
-        const centerY = top + height / 2;
-
-        // Calculate distance from center
-        const offsetX = e.clientX - centerX;
-        const offsetY = e.clientY - centerY;
-
-        // Move image OPPOSITE to mouse (pan effect)
-        // Max shift of 20px
-        const maxShift = 20;
-        const moveX = (offsetX / (width / 2)) * -maxShift;
-        const moveY = (offsetY / (height / 2)) * -maxShift;
-
-        // Update motion values
-        x.set(moveX);
-        y.set(moveY);
-    };
-
-    const handleMouseLeave = () => {
-        x.set(0);
-        y.set(0);
-    };
-
-    return (
-        <div
-            ref={containerRef}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            className="relative w-full h-[85vh] overflow-hidden rounded-sm cursor-none"
-        >
-            <motion.img
-                layoutId={layoutId}
-                src={src}
-                alt={alt}
-                style={{ x: springX, y: springY, scale: 1.15 }} // 1.15 scale to avoid edges showing
-                className="w-full h-full object-cover pointer-events-none"
-            />
-            {/* Optional: Subtle Overlay/Vignette */}
-            <div className="absolute inset-0 bg-black/10 pointer-events-none" />
-        </div>
-    );
+// Page transition variants
+const pageVariants = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] } },
+    exit: { opacity: 0, y: -30, transition: { duration: 0.4 } }
 };
 
 export default function ProductDetail() {
     const { id } = useParams();
     const product = products.find(p => p.id === id);
+    const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-    if (!product) return <div className="text-white text-center pt-32">Product not found</div>;
+    if (!product) return (
+        <div className="min-h-screen grid place-items-center bg-white">
+            <div className="text-center">
+                <h1 className="text-4xl font-serif text-heading mb-4">Collection Not Found</h1>
+                <Link to="/our-products" className="text-cta uppercase tracking-widest text-xs font-bold">← Back to Curation</Link>
+            </div>
+        </div>
+    );
 
-    // Use gallery if available, otherwise just use the main image as a single item array
-    const displayImages = (product.gallery && product.gallery.length > 0)
-        ? product.gallery
-        : [product.image];
-    const relatedProjects = products
-        .filter(p => p.id !== id)
-        .slice(0, 3)
-        .map(p => ({
-            ...p,
-            location: "Jaipur, India",
-            client: "Private Residence"
-        }));
+    const displayImages = product.gallery?.length > 0 ? product.gallery : [product.image];
+    const specs = getSpecifications(product);
+    const relatedProducts = products.filter(p => p.id !== id).slice(0, 3);
 
     return (
-
-        <div className="bg-blush min-h-screen">
-            {/* Header */}
-            <div className="container mx-auto px-6 pt-32 pb-8">
-                <Link to="/our-products" className="inline-flex items-center text-body-text hover:text-cta transition-colors gap-2 uppercase tracking-widest text-xs font-bold">
-                    <ArrowLeft size={16} /> Back to Collection
+        <motion.div
+            variants={pageVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="bg-white min-h-screen"
+        >
+            {/* Back to Curation — Sleek thin-lined arrow */}
+            <div className="fixed top-28 left-6 z-30">
+                <Link
+                    to="/our-products"
+                    className="group inline-flex items-center gap-3 bg-white/80 backdrop-blur-md border border-soft-border rounded-full pl-3 pr-5 py-2.5 hover:border-cta transition-all duration-300 shadow-sm"
+                >
+                    <span className="w-7 h-7 rounded-full border border-heading/20 flex items-center justify-center group-hover:border-cta group-hover:bg-cta transition-all duration-300">
+                        <ArrowLeft size={12} className="text-heading group-hover:text-white transition-colors" />
+                    </span>
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-heading">Back to Curation</span>
                 </Link>
             </div>
 
-            <main className="container mx-auto px-6 pb-20">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+            {/* === Hero: 60/40 Asymmetric Split === */}
+            <section className="flex flex-col lg:flex-row min-h-screen">
 
-                    {/* LEft Column: Visuals (Editorial Stack) */}
-                    <div className="lg:col-span-7 space-y-24">
-                        {displayImages.map((img, index) => (
-                            <WindowPanImage
-                                key={index}
-                                src={img}
-                                alt={`${product.title} - View ${index + 1}`}
-                                layoutId={index === 0 ? product.id : null}
+                {/* Left 60% — Full-bleed Image with Ken Burns */}
+                <div className="w-full lg:w-[60%] h-[50vh] lg:h-screen relative">
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={activeImageIndex}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="absolute inset-0"
+                        >
+                            <KenBurnsImage
+                                src={displayImages[activeImageIndex]}
+                                alt={`${product.title} - View ${activeImageIndex + 1}`}
                             />
-                        ))}
-                    </div>
+                        </motion.div>
+                    </AnimatePresence>
 
-                    {/* Right Column: Info (Sticky) */}
-                    <div className="lg:col-span-5 relative">
-                        <div className="sticky top-24 h-fit space-y-12">
+                    {/* Image Navigation Dots */}
+                    {displayImages.length > 1 && (
+                        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 z-10">
+                            {displayImages.map((_, i) => (
+                                <button
+                                    key={i}
+                                    onClick={() => setActiveImageIndex(i)}
+                                    className={`w-2 h-2 rounded-full transition-all duration-300 ${i === activeImageIndex
+                                            ? 'bg-white w-8'
+                                            : 'bg-white/50 hover:bg-white/80'
+                                        }`}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
 
-                            {/* Title & Description */}
-                            <div>
-                                <span className="text-cta tracking-[0.2em] uppercase text-xs font-bold mb-4 block">Signature Collection</span>
-                                <div className="text-5xl md:text-7xl font-serif text-heading mb-6 leading-none">
-                                    <BlurText text={product.title} delay={0.1} />
-                                </div>
+                {/* Right 40% — Dossier Panel */}
+                <div className="w-full lg:w-[40%] lg:h-screen lg:overflow-y-auto" style={{ backgroundColor: '#f4e9e2' }}>
+                    <div className="px-8 md:px-12 lg:px-14 py-12 lg:py-24 flex flex-col justify-center min-h-full">
 
-                                {/* Application Tags */}
-                                <div className="flex flex-wrap gap-2 mb-8">
-                                    {['Living Room', 'Commercial Grade', 'Acoustic'].map((tag, i) => (
-                                        <span key={i} className="px-3 py-1 rounded-full border border-soft-border text-body-text text-[10px] uppercase tracking-wider bg-white/40">
-                                            {tag}
-                                        </span>
+                        {/* Category Tag */}
+                        <motion.span
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.3 }}
+                            className="text-cta tracking-[0.3em] uppercase text-[10px] font-bold mb-6 block"
+                        >
+                            SVE Signature Collection
+                        </motion.span>
+
+                        {/* Title — Oversized Elegant Serif */}
+                        <motion.h1
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4, duration: 0.8 }}
+                            className="text-4xl md:text-5xl lg:text-6xl font-serif text-heading mb-8 leading-[1.1]"
+                        >
+                            {product.title}
+                        </motion.h1>
+
+                        {/* Thin Divider */}
+                        <motion.div
+                            initial={{ width: 0 }}
+                            animate={{ width: '60px' }}
+                            transition={{ delay: 0.6, duration: 0.6 }}
+                            className="h-px bg-heading/30 mb-8"
+                        />
+
+                        {/* Mission-Led Description / Design Intent */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.7 }}
+                        >
+                            <h3 className="text-[10px] uppercase tracking-[0.2em] font-bold text-heading/60 mb-3">Design Intent</h3>
+                            <p className="text-heading/80 text-base leading-relaxed font-light mb-4">
+                                {product.longDescription || product.description}
+                            </p>
+                            <p className="text-heading/60 text-sm leading-relaxed font-light italic">
+                                Reflecting our 15-year legacy of precision, these {product.title} solutions are designed to translate your vision into a functional, aesthetically refined environment.
+                            </p>
+                        </motion.div>
+
+                        {/* Statistical Quality Badges */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.85 }}
+                            className="flex gap-4 mt-8 mb-8"
+                        >
+                            <div className="flex items-center gap-2 bg-white/60 rounded-full px-4 py-2">
+                                <Award size={14} className="text-cta" />
+                                <span className="text-[10px] uppercase tracking-wider font-bold text-heading/70">15+ Years of Refined Taste</span>
+                            </div>
+                            <div className="flex items-center gap-2 bg-white/60 rounded-full px-4 py-2">
+                                <CheckCircle size={14} className="text-cta" />
+                                <span className="text-[10px] uppercase tracking-wider font-bold text-heading/70">15,000+ Success Stories</span>
+                            </div>
+                        </motion.div>
+
+                        {/* The Specification Grid */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 1.0 }}
+                            className="grid grid-cols-2 gap-px bg-heading/10 rounded-lg overflow-hidden mb-8"
+                        >
+                            <div className="bg-white/50 p-5">
+                                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Material</span>
+                                <span className="text-sm font-light text-heading">{product.material}</span>
+                            </div>
+                            <div className="bg-white/50 p-5">
+                                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Durability</span>
+                                <span className="text-sm font-light text-heading">{product.durability}</span>
+                            </div>
+                            <div className="bg-white/50 p-5">
+                                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Applications</span>
+                                <div className="flex gap-2">
+                                    {specs.applications.map((app, i) => (
+                                        <span key={i} className="text-[10px] bg-cta/10 text-cta font-bold uppercase tracking-wider px-2.5 py-1 rounded-sm">{app}</span>
                                     ))}
                                 </div>
-
-                                <p className="text-heading text-lg leading-relaxed font-light">
-                                    {product.longDescription || product.description}
-                                </p>
                             </div>
-
-                            {/* Designer's Note */}
-                            <div className="pl-6 border-l-2 border-cta py-2">
-                                <p className="text-3xl font-serif italic text-heading/90 leading-tight">
-                                    "Designed to define spaces with acoustic perfection and visual warmth."
-                                </p>
+                            <div className="bg-white/50 p-5">
+                                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Craftsmanship</span>
+                                <span className="text-sm font-light text-heading">{specs.craftsmanship}</span>
                             </div>
+                        </motion.div>
 
-                            {/* Editorial Insight Block */}
-                            <DesignGuidanceBlock productId={product.id} />
+                        {/* Best Use */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 1.1 }}
+                            className="mb-8"
+                        >
+                            <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-3">Best Use</span>
+                            <div className="flex flex-wrap gap-2">
+                                {product.bestUse?.split(', ').map((use, i) => (
+                                    <span key={i} className="px-3 py-1.5 rounded-full border border-heading/15 text-heading/70 text-[10px] uppercase tracking-wider font-bold bg-white/40">
+                                        {use}
+                                    </span>
+                                ))}
+                            </div>
+                        </motion.div>
 
+                        {/* Interactive Design Insight — Floating Card */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20, rotate: -1 }}
+                            animate={{ opacity: 1, y: 0, rotate: -1 }}
+                            whileHover={{ rotate: 0, scale: 1.02 }}
+                            transition={{ delay: 1.2, duration: 0.6 }}
+                            className="relative bg-white rounded-xl p-6 shadow-lg border border-soft-border cursor-default"
+                        >
+                            <Sparkles size={16} className="text-gold absolute top-4 right-4" />
+                            <p className="text-lg font-serif italic text-heading/80 leading-relaxed">
+                                "A SVE Signature: Thoughtful details that elevate everyday living."
+                            </p>
+                            <span className="block text-[9px] uppercase tracking-[0.2em] font-bold text-cta mt-3">— Design Philosophy</span>
+                        </motion.div>
 
+                        {/* CTA */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 1.4 }}
+                            className="mt-10"
+                        >
+                            <Link
+                                to="/contact-us"
+                                className="inline-flex items-center gap-3 bg-heading text-white px-8 py-4 rounded-sm hover:bg-cta transition-colors duration-300 group"
+                            >
+                                <span className="text-xs uppercase tracking-[0.2em] font-bold">Request a Consultation</span>
+                                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                            </Link>
+                        </motion.div>
 
+                    </div>
+                </div>
+            </section>
+
+            {/* Gallery Strip — Additional Images */}
+            {displayImages.length > 1 && (
+                <section className="bg-white py-20">
+                    <div className="container mx-auto px-6">
+                        <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-heading/40 mb-10 text-center">Gallery</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            {displayImages.map((img, i) => (
+                                <motion.div
+                                    key={i}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: i * 0.15, duration: 0.6 }}
+                                    className={`overflow-hidden rounded-lg cursor-pointer ${activeImageIndex === i ? 'ring-2 ring-cta' : ''
+                                        }`}
+                                    onClick={() => { setActiveImageIndex(i); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                                >
+                                    <img
+                                        src={img}
+                                        alt={`${product.title} view ${i + 1}`}
+                                        className="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-700"
+                                    />
+                                </motion.div>
+                            ))}
                         </div>
                     </div>
+                </section>
+            )}
 
-                </div>
-            </main>
-
-            {/* Live Implementations / Related Projects */}
-            <div className="container mx-auto px-6 mt-12 mb-20 border-t border-black/5 pt-16">
-                <div className="flex items-end justify-between mb-12">
-                    <h3 className="text-3xl font-serif text-heading">Live Implementations</h3>
-                    <Link to="/our-products" className="text-xs text-cta uppercase tracking-widest hover:text-heading transition-colors">View All &rarr;</Link>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {relatedProjects.map((p, idx) => (
-                        <Link to={`/product/${p.id}`} key={idx} className="group cursor-pointer">
-                            <div className="overflow-hidden rounded-xl aspect-[4/5] mb-4 relative">
-                                <img src={p.image} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt={p.title} />
-                                <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors" />
-                            </div>
-                            <h4 className="text-heading font-serif text-xl">{p.title}</h4>
-                            <p className="text-body-text text-sm">{p.category || "Collection"}</p>
+            {/* Related Collections */}
+            <section className="bg-blush py-20">
+                <div className="container mx-auto px-6">
+                    <div className="flex items-end justify-between mb-12">
+                        <div>
+                            <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-cta block mb-2">Continue Exploring</span>
+                            <h3 className="text-3xl font-serif text-heading">From the Curation</h3>
+                        </div>
+                        <Link to="/our-products" className="text-xs text-cta uppercase tracking-widest hover:text-heading transition-colors font-bold">
+                            View All →
                         </Link>
-                    ))}
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {relatedProducts.map((p, idx) => (
+                            <Link to={`/product/${p.id}`} key={idx} className="group cursor-pointer">
+                                <div className="overflow-hidden rounded-xl aspect-[4/5] mb-4 relative">
+                                    <img src={p.image} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt={p.title} />
+                                    <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors duration-500" />
+                                </div>
+                                <h4 className="text-heading font-serif text-xl">{p.title}</h4>
+                                <p className="text-body-text text-sm font-light">{p.description}</p>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </motion.div>
     );
 }

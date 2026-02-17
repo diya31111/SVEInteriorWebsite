@@ -3,10 +3,10 @@ import { useRef } from 'react';
 import BrandPartners from '../components/BrandPartners';
 
 const stats = [
-    { label: "Years Experience", value: 20, suffix: "+", width: "85%" },
-    { label: "Skilled Team", value: 45, suffix: "", width: "70%" },
-    { label: "Completed Projects", value: 4678, suffix: "", width: "95%" },
-    { label: "Corporate Clients", value: 570, suffix: "", width: "80%" },
+    { label: "Years of Excellence", value: 15, suffix: "+", width: "85%" },
+    { label: "Completed Projects", value: 15000, suffix: "+", width: "95%" },
+    { label: "Corporate Clients", value: 500, suffix: "+", width: "80%" },
+    { label: "Customer Recommendations", value: 6000, suffix: "+", width: "90%" },
 ];
 
 const StatBar = ({ label, value, suffix, delay, width }) => {
@@ -50,15 +50,15 @@ export default function About() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        <span className="text-heading tracking-[0.2em] uppercase text-xs font-bold block mb-4">Discover Elegance</span>
+                        <span className="text-heading tracking-[0.2em] uppercase text-xs font-bold block mb-4">Designing with Purpose</span>
                         <h1 className="text-5xl md:text-6xl font-serif text-heading mb-8 leading-tight">
-                            The Premier Home Furnishing Showroom in <span className="text-cta italic">Jaipur</span>
+                            Complete Interior Solutions in <span className="text-cta italic">Jaipur</span>
                         </h1>
                         <p className="text-body-text text-lg leading-relaxed mb-6">
-                            SVE Interior is an affordable home furnishing showroom in Rajapark, Jaipur. With the most efficient and qualified team of professionals, we bring to the attention of our clients a unique and trendy home and office décor through our unique styles and innovative products. We are definitely your best choice when it comes to home furnishing.
+                            SVE Interior was born out of a belief that thoughtful design can stand the test of time. We bridge the gap between form and function, elegance and comfort. With 15+ years of experience delivering premium product quality and a seamless customer experience, we are Jaipur's most trusted name in complete interior solutions.
                         </p>
                         <p className="text-body-text leading-relaxed mb-12 font-light">
-                            Established with a vision to redefine home decor and interior design, SVE Interior has curated a stunning collection of furnishings that cater to the discerning tastes of its clientele. From opulent sofas and luxurious beds to exquisite rugs and statement lighting, every piece in the showroom reflects a commitment to excellence and sophistication.
+                            Founded by Yash &amp; Nidhi Mamoria, SVE Interior has grown from a passion project into one of Rajasthan's leading interior showrooms. Every decision we make is guided by balance—between innovation and timelessness—ensuring spaces that feel both modern and enduring.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 pt-8 border-t border-black/5">
@@ -124,17 +124,63 @@ export default function About() {
                                 className="space-y-6 text-body-text font-light text-lg leading-relaxed"
                             >
                                 <p>
-                                    SVE Interior is providing excellent interior designing with the best designs and creativity to all our reputed customers. Since our beginning in the marketplace, we have been offering more premium & economic modern Interior designing & flooring services to our valuable clients.
+                                    At SVE Interior, we believe that great design is invisible—it simply feels right. Since 2008, we have been delivering complete interior solutions that combine premium product quality with a seamless customer experience. Every project we undertake is guided by balance—between innovation and timelessness.
                                 </p>
                                 <p>
-                                    Our services are extremely efficient, effective and very affordable in India. With its exquisite collection, impeccable craftsmanship, and personalized service, SVE Interior has earned its reputation as the best home furnishing showroom and store in the city.
+                                    With 15,000+ projects completed and 500+ corporate clients nationwide, our reputation speaks for itself. From bespoke home furnishings to large-scale commercial fit-outs, we bring the same conviction: invest in long-term value, never settle for short-term trends.
                                 </p>
                                 <p className="border-l-2 border-cta pl-6 italic text-heading/80">
-                                    "For those who seek to transform their homes into havens of elegance and style, SVE Interior is the ultimate destination."
+                                    "Thoughtful design stands the test of time. That is the only kind we practice."
                                 </p>
                             </motion.div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Founders Section */}
+            <section className="container mx-auto px-6 mb-32">
+                <div className="text-center mb-16">
+                    <span className="text-gold tracking-[0.2em] uppercase text-xs font-bold block mb-4">The Visionaries</span>
+                    <h2 className="text-4xl md:text-5xl font-serif text-heading">Meet the <span className="text-cta italic">Founders</span></h2>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                    {[
+                        {
+                            name: "Yash Mamoria",
+                            role: "Co-Founder & Design Director",
+                            desc: "With an unwavering eye for detail and a deep conviction in quality over quantity, Yash leads SVE Interior's design philosophy. His belief: every space should reflect the personality of its owner, built with materials and designs that appreciate over time, not depreciate.",
+                            image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop"
+                        },
+                        {
+                            name: "Nidhi Mamoria",
+                            role: "Co-Founder & Operations Head",
+                            desc: "Nidhi brings operational excellence and a seamless customer experience to every project. Her passion for long-term value over short-term trends has shaped SVE Interior's reputation for reliability, transparency, and client satisfaction across 15,000+ projects.",
+                            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop"
+                        }
+                    ].map((founder, i) => (
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: i * 0.2 }}
+                            className="bg-white rounded-2xl overflow-hidden border border-soft-border shadow-sm hover:shadow-lg transition-shadow duration-500 group"
+                        >
+                            <div className="h-72 overflow-hidden">
+                                <img
+                                    src={founder.image}
+                                    alt={founder.name}
+                                    className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                                />
+                            </div>
+                            <div className="p-8">
+                                <h3 className="text-2xl font-serif text-heading mb-1">{founder.name}</h3>
+                                <span className="text-cta text-xs uppercase tracking-[0.15em] font-bold block mb-4">{founder.role}</span>
+                                <p className="text-body-text font-light leading-relaxed text-sm">{founder.desc}</p>
+                            </div>
+                        </motion.div>
+                    ))}
                 </div>
             </section>
 

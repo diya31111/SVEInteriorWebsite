@@ -74,9 +74,9 @@ export default function BrandPartners() {
         <section className="py-24 bg-white border-t border-soft-border">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-serif text-heading mb-6">Our Premium <span className="italic text-cta">Product Partners</span></h2>
+                    <h2 className="text-3xl md:text-5xl font-serif text-heading mb-6">A Legacy of Luxury: <span className="italic text-cta">Our Global Brand Partners</span></h2>
                     <p className="text-body-text max-w-2xl mx-auto font-light text-lg">
-                        We take pride in offering products from these globally renowned brands to ensure the highest quality for your spaces.
+                        Partnering with the world's most elite textile and decor brands—from Versace to D'Decor—to bring international quality and designer elegance to your doorstep.
                     </p>
                 </div>
 

@@ -1,4 +1,4 @@
-export default function ShinyText({ text, disabled = false, speed = 3, className = '' }) {
+export default function ShinyText({ text, disabled = false, speed = 5, className = '' }) {
     const animationDuration = `${speed}s`;
 
     return (

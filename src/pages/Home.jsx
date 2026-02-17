@@ -39,25 +39,33 @@ export default function Home() {
                 <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
                     <div className="mb-8">
                         <ShinyText
-                            text="Est. 2008 — Jaipur, India"
-                            className="text-heading uppercase text-xs md:text-sm font-bold tracking-[0.3em] drop-shadow-sm"
+                            text="Est. 2008-Jaipur, India"
+                            className="text-heading text-black uppercase text-xs md:text-sm font-bold tracking-[0.3em] drop-shadow-sm"
                         />
                     </div>
 
                     <div className="mb-10 text-5xl md:text-7xl lg:text-9xl font-serif font-bold text-heading leading-none tracking-tight">
-                        <BlurText text="Sculpting" delay={0.3} className="block text-center justify-center text-heading" />
+                        <BlurText text="A Legacy of" delay={0.3} className="block text-center justify-center text-heading" />
                         <span className="italic font-light text-body-text block mt-2">
-                            <BlurText text="Elegance" delay={1} className="block text-center justify-center text-body-text" />
+                            <BlurText text="Luxury" delay={1} className="block text-center justify-center text-body-text" />
                         </span>
                     </div>
 
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 1.5 }}
-                        className="text-lg md:text-xl text-body-text mb-12 font-light max-w-2xl mx-auto leading-relaxed"
+                        transition={{ duration: 1, delay: 1.2 }}
+                        className="text-2xl md:text-3xl font-serif text-heading mb-4 max-w-3xl mx-auto leading-snug"
                     >
-                        Bespoke interiors blending modern luxury with timeless comfort.
+                        Defining Jaipur's Interiors Since 2008
+                    </motion.p>
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1.5 }}
+                        className="text-base md:text-lg text-body-text mb-12 font-light max-w-2xl mx-auto leading-relaxed"
+                    >
+                        Founded by Yash &amp; Nidhi Mamoria on the principles of design integrity and honest craftsmanship. With 15+ years of experience and 15,000+ projects completed, we don't just decorate spaces—we create enduring experiences.
                     </motion.p>
 
                     <motion.div
