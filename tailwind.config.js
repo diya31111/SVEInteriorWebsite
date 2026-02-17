@@ -8,6 +8,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        'primary': 'var(--bg-primary)',
+        'secondary': 'var(--bg-secondary)',
         'blush': 'var(--bg-blush)',
         'rose': 'var(--bg-rose)',
         'footer': 'var(--bg-footer)', 

@@ -42,9 +42,9 @@ export default function ProductDetail() {
     const [activeImageIndex, setActiveImageIndex] = useState(0);
 
     if (!product) return (
-        <div className="min-h-screen grid place-items-center bg-white">
+        <div className="min-h-screen grid place-items-center bg-primary">
             <div className="text-center">
-                <h1 className="text-4xl font-serif text-heading mb-4">Collection Not Found</h1>
+                <h1 className="text-4xl font-serif text-heading mb-4">Product Not Found</h1>
                 <Link to="/our-products" className="text-cta uppercase tracking-widest text-xs font-bold">← Back to Curation</Link>
             </div>
         </div>
@@ -60,13 +60,13 @@ export default function ProductDetail() {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="bg-white min-h-screen"
+            className="bg-primary min-h-screen"
         >
             {/* Back to Curation — Sleek thin-lined arrow */}
             <div className="fixed top-28 left-6 z-30">
                 <Link
                     to="/our-products"
-                    className="group inline-flex items-center gap-3 bg-white/80 backdrop-blur-md border border-soft-border rounded-full pl-3 pr-5 py-2.5 hover:border-cta transition-all duration-300 shadow-sm"
+                    className="group inline-flex items-center gap-3 bg-secondary/80 backdrop-blur-md border border-soft-border rounded-full pl-3 pr-5 py-2.5 hover:border-cta transition-all duration-300 shadow-sm"
                 >
                     <span className="w-7 h-7 rounded-full border border-heading/20 flex items-center justify-center group-hover:border-cta group-hover:bg-cta transition-all duration-300">
                         <ArrowLeft size={12} className="text-heading group-hover:text-white transition-colors" />
@@ -104,8 +104,8 @@ export default function ProductDetail() {
                                     key={i}
                                     onClick={() => setActiveImageIndex(i)}
                                     className={`w-2 h-2 rounded-full transition-all duration-300 ${i === activeImageIndex
-                                            ? 'bg-white w-8'
-                                            : 'bg-white/50 hover:bg-white/80'
+                                        ? 'bg-white w-8'
+                                        : 'bg-white/50 hover:bg-white/80'
                                         }`}
                                 />
                             ))}
@@ -124,7 +124,7 @@ export default function ProductDetail() {
                             transition={{ delay: 0.3 }}
                             className="text-cta tracking-[0.3em] uppercase text-[10px] font-bold mb-6 block"
                         >
-                            SVE Signature Collection
+                            SVE Signature Product
                         </motion.span>
 
                         {/* Title — Oversized Elegant Serif */}
@@ -167,11 +167,11 @@ export default function ProductDetail() {
                             transition={{ delay: 0.85 }}
                             className="flex gap-4 mt-8 mb-8"
                         >
-                            <div className="flex items-center gap-2 bg-white/60 rounded-full px-4 py-2">
+                            <div className="flex items-center gap-2 bg-secondary rounded-full px-4 py-2">
                                 <Award size={14} className="text-cta" />
                                 <span className="text-[10px] uppercase tracking-wider font-bold text-heading/70">15+ Years of Refined Taste</span>
                             </div>
-                            <div className="flex items-center gap-2 bg-white/60 rounded-full px-4 py-2">
+                            <div className="flex items-center gap-2 bg-secondary rounded-full px-4 py-2">
                                 <CheckCircle size={14} className="text-cta" />
                                 <span className="text-[10px] uppercase tracking-wider font-bold text-heading/70">15,000+ Success Stories</span>
                             </div>
@@ -184,15 +184,15 @@ export default function ProductDetail() {
                             transition={{ delay: 1.0 }}
                             className="grid grid-cols-2 gap-px bg-heading/10 rounded-lg overflow-hidden mb-8"
                         >
-                            <div className="bg-white/50 p-5">
+                            <div className="bg-secondary/50 p-5">
                                 <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Material</span>
                                 <span className="text-sm font-light text-heading">{product.material}</span>
                             </div>
-                            <div className="bg-white/50 p-5">
+                            <div className="bg-secondary/50 p-5">
                                 <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Durability</span>
                                 <span className="text-sm font-light text-heading">{product.durability}</span>
                             </div>
-                            <div className="bg-white/50 p-5">
+                            <div className="bg-secondary/50 p-5">
                                 <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Applications</span>
                                 <div className="flex gap-2">
                                     {specs.applications.map((app, i) => (
@@ -200,7 +200,7 @@ export default function ProductDetail() {
                                     ))}
                                 </div>
                             </div>
-                            <div className="bg-white/50 p-5">
+                            <div className="bg-secondary/50 p-5">
                                 <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Craftsmanship</span>
                                 <span className="text-sm font-light text-heading">{specs.craftsmanship}</span>
                             </div>
@@ -216,7 +216,7 @@ export default function ProductDetail() {
                             <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-3">Best Use</span>
                             <div className="flex flex-wrap gap-2">
                                 {product.bestUse?.split(', ').map((use, i) => (
-                                    <span key={i} className="px-3 py-1.5 rounded-full border border-heading/15 text-heading/70 text-[10px] uppercase tracking-wider font-bold bg-white/40">
+                                    <span key={i} className="px-3 py-1.5 rounded-full border border-heading/15 text-heading/70 text-[10px] uppercase tracking-wider font-bold bg-secondary/40">
                                         {use}
                                     </span>
                                 ))}
@@ -229,7 +229,7 @@ export default function ProductDetail() {
                             animate={{ opacity: 1, y: 0, rotate: -1 }}
                             whileHover={{ rotate: 0, scale: 1.02 }}
                             transition={{ delay: 1.2, duration: 0.6 }}
-                            className="relative bg-white rounded-xl p-6 shadow-lg border border-soft-border cursor-default"
+                            className="relative bg-secondary rounded-xl p-6 shadow-lg border border-soft-border cursor-default"
                         >
                             <Sparkles size={16} className="text-gold absolute top-4 right-4" />
                             <p className="text-lg font-serif italic text-heading/80 leading-relaxed">
@@ -260,7 +260,7 @@ export default function ProductDetail() {
 
             {/* Gallery Strip — Additional Images */}
             {displayImages.length > 1 && (
-                <section className="bg-white py-20">
+                <section className="bg-primary py-20">
                     <div className="container mx-auto px-6">
                         <h3 className="text-[10px] uppercase tracking-[0.3em] font-bold text-heading/40 mb-10 text-center">Gallery</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -287,7 +287,7 @@ export default function ProductDetail() {
                 </section>
             )}
 
-            {/* Related Collections */}
+            {/* Related Signature Products */}
             <section className="bg-blush py-20">
                 <div className="container mx-auto px-6">
                     <div className="flex items-end justify-between mb-12">
@@ -304,7 +304,7 @@ export default function ProductDetail() {
                             <Link to={`/product/${p.id}`} key={idx} className="group cursor-pointer">
                                 <div className="overflow-hidden rounded-xl aspect-[4/5] mb-4 relative">
                                     <img src={p.image} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt={p.title} />
-                                    <div className="absolute inset-0 bg-white/20 group-hover:bg-transparent transition-colors duration-500" />
+                                    <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500" />
                                 </div>
                                 <h4 className="text-heading font-serif text-xl">{p.title}</h4>
                                 <p className="text-body-text text-sm font-light">{p.description}</p>

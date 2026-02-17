@@ -111,7 +111,7 @@ export default function Contact() {
                     >
                         <h3 className="text-2xl font-serif text-heading mb-6">Send a Message</h3>
                         {status.message && (
-                            <div className={`p-4 mb-4 rounded-lg ${status.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                            <div className={`p-4 mb-4 rounded-lg ${status.type === 'success' ? 'bg-[#f4e9e2] text-heading border border-heading/20' : 'bg-red-100 text-red-700'}`}>
                                 {status.message}
                             </div>
                         )}

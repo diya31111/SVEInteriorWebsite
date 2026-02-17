@@ -15,7 +15,7 @@ export default function BlogPost() {
 
     if (!post) {
         return (
-            <div className="min-h-screen grid place-items-center bg-white">
+            <div className="bg-primary min-h-screen grid place-items-center">
                 <div className="text-center">
                     <h1 className="text-4xl font-serif text-heading mb-4">Post Not Found</h1>
                     <p className="text-body-text mb-8">The article you're looking for doesn't exist.</p>
@@ -28,7 +28,7 @@ export default function BlogPost() {
     }
 
     return (
-        <div className="bg-white min-h-screen">
+        <div className="bg-primary min-h-screen">
             {/* Hero Image */}
             <div className="relative h-[60vh] w-full">
                 <img
@@ -92,7 +92,7 @@ export default function BlogPost() {
                                 {post.tags.map((tag, i) => (
                                     <span
                                         key={i}
-                                        className="inline-block bg-cta text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-sm"
+                                        className="inline-block bg-blush/30 text-heading/80 text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-sm border border-heading/20"
                                     >
                                         {tag}
                                     </span>
@@ -110,14 +110,14 @@ export default function BlogPost() {
                             <Link
                                 key={p.id}
                                 to={`/blog/${p.id}`}
-                                className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-0 border border-soft-border rounded-xl overflow-hidden bg-white hover:shadow-xl transition-shadow duration-500 group block`}
+                                className={`flex flex-col ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-0 border border-soft-border rounded-xl overflow-hidden bg-secondary hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 group block`}
                             >
                                 <div className="w-full md:w-1/2 overflow-hidden">
                                     <img src={p.image} alt={p.title} className="w-full h-full min-h-[240px] object-cover transition-transform duration-700 group-hover:scale-105" />
                                 </div>
                                 <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
                                     <span className="text-cta tracking-widest uppercase text-[10px] font-bold block mb-2">{p.category}</span>
-                                    <h4 className="text-lg font-bold uppercase tracking-wide text-heading mb-3 group-hover:text-cta transition-colors">{p.title}</h4>
+                                    <h4 className="text-lg font-serif font-bold text-heading mb-3 group-hover:text-cta transition-colors">{p.title}</h4>
                                     <div className="w-full h-px bg-soft-border mb-3"></div>
                                     <p className="text-body-text text-sm font-light leading-relaxed line-clamp-2">{p.excerpt}</p>
                                 </div>

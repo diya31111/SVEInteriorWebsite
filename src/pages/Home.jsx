@@ -40,7 +40,8 @@ export default function Home() {
                     <div className="mb-8">
                         <ShinyText
                             text="Est. 2008-Jaipur, India"
-                            className="text-heading text-black uppercase text-xs md:text-sm font-bold tracking-[0.3em] drop-shadow-sm"
+                            className="text-heading !text-black uppercase text-xs md:text-sm font-bold tracking-[0.3em] drop-shadow-sm"
+
                         />
                     </div>
 
@@ -78,7 +79,7 @@ export default function Home() {
                                 to="/our-products"
                                 className="group inline-flex items-center gap-4 bg-cta text-white uppercase tracking-[0.2em] text-xs font-extrabold hover:bg-rose transition-all px-10 py-5 rounded-full shadow-lg"
                             >
-                                Explore Collections
+                                Explore Our Signature Products
                                 <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform duration-300" />
                             </Link>
                         </MagneticButton>
@@ -95,17 +96,17 @@ export default function Home() {
             {/* Why Choose Us Section - ROSE Background */}
             <WhyChooseUs />
 
-            {/* Featured Collections Preview */}
+            {/* Featured Signature Products Preview */}
             <section className="py-32 px-6 bg-white">
                 <div className="container mx-auto">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                         <div>
                             <h3 className="text-gold tracking-[0.2em] uppercase text-xs mb-4 font-bold">Curated Excellence</h3>
-                            <h2 className="text-4xl md:text-6xl font-serif text-heading leading-tight">Signature <span className="italic text-body-text font-light">Collections</span></h2>
+                            <h2 className="text-4xl md:text-6xl font-serif text-heading leading-tight">Our Signature <span className="italic text-body-text font-light">Products</span></h2>
                         </div>
                         <div className="mt-8 md:mb-2">
                             <Link to="/our-products" className="group inline-flex items-center gap-2 text-body-text hover:text-cta transition-colors uppercase tracking-[0.2em] text-xs font-bold border-b border-soft-border pb-2 hover:border-cta">
-                                View All Collections <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                                View All Signature Products <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                             </Link>
                         </div>
                     </div>

@@ -377,5 +377,108 @@ export const posts = [
             <h2>SVE Interior's Flooring Collection</h2>
             <p>At SVE Interior, we stock a curated collection of both engineered wood and premium laminate flooring from leading manufacturers. Our showroom in Raja Park, Jaipur features live samples you can see and feel, and our team provides expert guidance to help you choose the perfect floor for your space, lifestyle, and budget.</p>
         `
+    },
+    {
+        id: "15-years-design-excellence",
+        title: "15 YEARS OF DESIGN EXCELLENCE: THE YASH & NIDHI MAMORIA STORY",
+        category: "COMPANY STORY",
+        date: "February 15, 2026",
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+        excerpt: "From a bold idea in 2008 to Rajasthan's most trusted interior brand, SVE Interior's journey is a testament to conviction over caution. Discover how Yash and Nidhi Mamoria built a legacy of 15,000+ projects on the foundation of thoughtful design.",
+        tags: ["SVE Interior Story", "Interior Design Jaipur", "Yash Mamoria", "Nidhi Mamoria", "Design Excellence"],
+        content: `
+            <p class="lead">Every great brand begins with a belief. For SVE Interior, that belief was simple yet radical: thoughtful design should stand the test of time. In 2008, Yash and Nidhi Mamoria took that conviction and turned it into what is now Rajasthan's most trusted interior solutions studio.</p>
+
+            <h2>The Beginning: Conviction Over Caution</h2>
+            <p>When Yash and Nidhi Mamoria founded SVE Interior in 2008, the interior design landscape in Jaipur was dominated by short-term thinking — quick jobs, trendy materials, and little regard for longevity. The Mamorias saw an opportunity to do things differently. Their philosophy was clear from day one: invest in long-term value, never settle for short-term trends.</p>
+            <p>This wasn't just a business strategy — it was a personal conviction. Yash, with his unwavering eye for detail and quality, believed that every space should reflect the personality of its owner. Nidhi brought operational excellence, ensuring that every project — from consultation to final delivery — was a seamless customer experience.</p>
+
+            <h2>Building a Legacy</h2>
+            <p>What started as a small showroom in Raja Park, Jaipur, has grown into a comprehensive design studio offering complete interior solutions. Over 15 years, SVE Interior has completed more than 15,000 projects, served 500+ corporate clients nationwide, and earned 6,000+ direct customer recommendations.</p>
+            <p>The numbers are impressive, but they tell only part of the story. Behind every project is a relationship built on trust, transparency, and a shared vision for creating spaces that endure.</p>
+
+            <h2>The Philosophy: Designing with Purpose</h2>
+            <p>SVE Interior's approach is guided by balance — between innovation and timelessness. They don't chase trends; they curate solutions that age gracefully. Every material is selected for its premium product quality. Every design decision is made with the occupant's lifestyle in mind.</p>
+            <p>"We don't just decorate spaces," Yash explains. "We understand how people live, work, and feel in their environments. That understanding is what separates decoration from true interior design."</p>
+
+            <h2>Looking Forward</h2>
+            <p>As SVE Interior enters its 16th year, the Mamorias remain as hands-on as ever. Their commitment to excellence hasn't wavered — if anything, it has deepened. With a growing portfolio of residential and commercial projects across Rajasthan and beyond, SVE Interior continues to prove that conviction, paired with craftsmanship, creates something truly lasting.</p>
+        `
+    },
+    {
+        id: "science-of-spatial-planning",
+        title: "THE SCIENCE OF SPATIAL PLANNING: MORE THAN JUST DECORATION",
+        category: "DESIGN PHILOSOPHY",
+        date: "February 10, 2026",
+        image: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=1200&auto=format&fit=crop",
+        excerpt: "At SVE Interior, design is a way of thinking — not just a way of decorating. We explore how understanding lifestyles, movement patterns, and human psychology transforms ordinary rooms into extraordinary spaces.",
+        tags: ["Spatial Planning", "Interior Design Philosophy", "Complete Interior Solutions", "Design Thinking", "SVE Interior"],
+        content: `
+            <p class="lead">Walk into any well-designed space, and something feels right — even if you can't immediately articulate why. That invisible quality is the result of spatial planning, a discipline that goes far beyond choosing colors and furniture. At SVE Interior, we believe design is a way of thinking, not just a way of decorating.</p>
+
+            <h2>Understanding How People Live</h2>
+            <p>The first step in any SVE Interior project isn't selecting materials or browsing catalogues. It's understanding the client. How does a family move through their home? Where do they gather? Where do they retreat for solitude? What brings them comfort?</p>
+            <p>This human-first approach is what sets us apart. We don't impose a style; we discover the one that already exists within each client's lifestyle and amplify it through design.</p>
+
+            <h2>The Principles of Spatial Flow</h2>
+            <p>Great spatial planning follows invisible rules that the occupant never notices but always feels:</p>
+            <ul>
+                <li><strong>Circulation:</strong> The pathways between rooms should feel natural and unobstructed. A well-planned home guides you effortlessly from space to space.</li>
+                <li><strong>Proportion:</strong> Furniture, fixtures, and open space must exist in harmony. Overcrowding suffocates a room; too much emptiness makes it feel cold.</li>
+                <li><strong>Light Mapping:</strong> Natural and artificial light should complement each other throughout the day, creating warmth in the morning and calm in the evening.</li>
+                <li><strong>Acoustic Zoning:</strong> Entertainment areas need energy; bedrooms need silence. Acoustic planning with solutions like our designer acoustic panels ensures each zone serves its purpose.</li>
+            </ul>
+
+            <h2>From Theory to Practice: The SVE Method</h2>
+            <p>Our 15+ years of experience across 15,000+ projects have refined our approach into a repeatable methodology that delivers consistent results:</p>
+            <ul>
+                <li><strong>Discovery:</strong> Deep-dive into the client's lifestyle, preferences, and aspirations</li>
+                <li><strong>Space Analysis:</strong> Technical evaluation of dimensions, light, ventilation, and structural possibilities</li>
+                <li><strong>Concept Design:</strong> Translating insights into a cohesive design language</li>
+                <li><strong>Material Curation:</strong> Selecting products that deliver premium product quality and longevity</li>
+                <li><strong>Execution:</strong> Precise implementation with continuous quality oversight</li>
+            </ul>
+
+            <h2>Why It Matters</h2>
+            <p>A beautifully decorated room can photograph well. But a thoughtfully planned space transforms how you live. It reduces daily friction, elevates your mood, and adapts to your evolving needs over years — not just seasons. That's the difference between decoration and design, and it's the standard we hold ourselves to at SVE Interior.</p>
+        `
+    },
+    {
+        id: "luxury-commercial-interiors",
+        title: "LUXURY COMMERCIAL INTERIORS: TRUST AND PRECISION AT SCALE",
+        category: "COMMERCIAL",
+        date: "February 5, 2026",
+        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop",
+        excerpt: "With 500+ corporate clients nationwide — from boutique offices to hospitality chains — SVE Interior has earned its reputation as Rajasthan's most trusted partner for large-scale commercial interiors. Here's why brands trust us with their most important spaces.",
+        tags: ["Commercial Interiors Jaipur", "Corporate Interior Design", "Office Interiors", "Hospitality Design", "SVE Interior Commercial"],
+        content: `
+            <p class="lead">Commercial interior design operates on a different plane than residential work. The stakes are higher, the timelines tighter, and the expectations more rigorous. With 500+ corporate clients nationwide and 15,000+ completed projects, SVE Interior has built a commercial practice grounded in one principle: trust is earned through precision.</p>
+
+            <h2>Why Commercial Clients Choose SVE Interior</h2>
+            <p>When a hotel chain selects an interior partner, they're not just choosing a vendor — they're choosing a guardian of their brand identity. Every material, every finish, every spatial decision reflects on the brand. That's why corporate clients consistently return to SVE Interior: we understand that commercial design is brand design.</p>
+
+            <h2>Scale Without Compromise</h2>
+            <p>One of the greatest challenges in commercial interiors is maintaining quality at scale. A five-room boutique hotel demands the same attention to detail as a 200-room chain. Our approach ensures consistency:</p>
+            <ul>
+                <li><strong>Standardized Material Libraries:</strong> We maintain curated libraries of pre-approved materials that meet our premium product quality standards, ensuring consistency across multiple locations</li>
+                <li><strong>Dedicated Project Management:</strong> Every commercial project receives a dedicated team that manages timelines, budgets, and quality benchmarks</li>
+                <li><strong>Phased Execution:</strong> For large-scale projects, we work in phases that minimize business disruption while maintaining design integrity</li>
+            </ul>
+
+            <h2>Sectors We Serve</h2>
+            <p>Our commercial portfolio spans diverse sectors, each with unique requirements:</p>
+            <ul>
+                <li><strong>Hospitality:</strong> Hotels, restaurants, and resorts requiring atmosphere, durability, and brand alignment</li>
+                <li><strong>Corporate:</strong> Offices and co-working spaces that balance productivity with employee wellbeing</li>
+                <li><strong>Retail:</strong> Showrooms and stores where interior design directly impacts customer experience and sales</li>
+                <li><strong>Healthcare:</strong> Clinics and wellness centers requiring calming environments with stringent material safety standards</li>
+                <li><strong>Banking & Finance:</strong> Institutions like SBI that demand professionalism, security integration, and client-facing elegance</li>
+            </ul>
+
+            <h2>The SVE Advantage</h2>
+            <p>What sets our commercial practice apart is the same philosophy that guides our residential work: every decision is guided by balance — between innovation and timelessness. We don't design spaces that need to be renovated every three years. We create environments that evolve gracefully, protecting our clients' investment and reinforcing their brand for years to come.</p>
+
+            <p>If you're planning a commercial interior project — whether it's a single office or a multi-location rollout — we'd love to show you what 15 years of precision and 500+ corporate relationships have taught us about designing spaces that work as hard as you do.</p>
+        `
     }
 ];

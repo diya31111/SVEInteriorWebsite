@@ -5,7 +5,7 @@ import { posts } from '../data/posts';
 
 export default function Blog() {
     return (
-        <div className="bg-white min-h-screen pt-32 pb-24">
+        <div className="bg-blush min-h-screen pt-32 pb-24">
             {/* Header */}
             <div className="container mx-auto px-6 mb-20 text-center">
                 <motion.span
@@ -21,7 +21,7 @@ export default function Blog() {
                     transition={{ delay: 0.1, duration: 0.8 }}
                     className="text-5xl md:text-7xl font-serif text-heading mb-8"
                 >
-                    The Design <span className="text-body-text italic font-light">Blog</span>
+                    The Design <span className="italic font-light" style={{ color: '#C08A7A' }}>Blog</span>
                 </motion.h1>
                 <motion.p
                     initial={{ opacity: 0 }}
@@ -47,7 +47,8 @@ export default function Blog() {
                             transition={{ duration: 0.7, delay: 0.1 }}
                             className="mb-20 last:mb-0"
                         >
-                            <div className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-0 border border-soft-border rounded-xl overflow-hidden bg-white hover:shadow-xl transition-shadow duration-500 group`}>
+                            {/* Card with glassmorphism-style surface */}
+                            <div className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-0 border border-soft-border rounded-xl overflow-hidden bg-secondary hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 group`}>
                                 {/* Image Side — 50% */}
                                 <div className="w-full md:w-1/2 relative overflow-hidden">
                                     <Link to={`/blog/${post.id}`} className="block h-full">
@@ -64,13 +65,13 @@ export default function Blog() {
                                     {/* Category & Date */}
                                     <div className="flex items-center gap-3 mb-4 text-[10px] sm:text-xs tracking-widest uppercase font-bold">
                                         <span className="text-cta">{post.category || "Design"}</span>
-                                        <span className="text-gray-300">•</span>
-                                        <span className="text-gray-400">{post.date}</span>
+                                        <span className="text-soft-border">•</span>
+                                        <span className="text-body-text/60">{post.date}</span>
                                     </div>
 
-                                    {/* Title — Bold, Uppercase, Sans-Serif */}
+                                    {/* Title — Serif, Brand Burgundy */}
                                     <Link to={`/blog/${post.id}`}>
-                                        <h2 className="text-xl md:text-2xl font-bold uppercase tracking-wide text-heading mb-0 leading-tight hover:text-cta transition-colors duration-300">
+                                        <h2 className="text-xl md:text-2xl font-serif font-bold text-heading mb-0 leading-tight hover:text-cta transition-colors duration-300">
                                             {post.title}
                                         </h2>
                                     </Link>
@@ -83,13 +84,13 @@ export default function Blog() {
                                         {post.excerpt}
                                     </p>
 
-                                    {/* SEO Keyword Tags */}
+                                    {/* SEO Keyword Tags — Brand burgundy/deep chocolate */}
                                     {post.tags && post.tags.length > 0 && (
                                         <div className="flex flex-wrap gap-2 mb-6">
                                             {post.tags.map((tag, i) => (
                                                 <span
                                                     key={i}
-                                                    className="inline-block bg-cta text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-sm"
+                                                    className="inline-block text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-sm border border-heading/20 text-heading/80 bg-blush/30"
                                                 >
                                                     {tag}
                                                 </span>
@@ -97,7 +98,7 @@ export default function Blog() {
                                         </div>
                                     )}
 
-                                    {/* Read More Button */}
+                                    {/* Read More Button — Dark branded */}
                                     <div className="mt-auto">
                                         <Link
                                             to={`/blog/${post.id}`}

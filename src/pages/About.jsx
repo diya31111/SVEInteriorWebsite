@@ -202,10 +202,10 @@ export default function About() {
                         </p>
 
                         <div className="grid grid-cols-2 gap-6">
-                            {['Curated Collections', 'Talented Professionals', 'Quality & Affordability', 'Next-Gen Technology'].map((item, i) => (
+                            {['Curated Signature Products', 'Talented Professionals', 'Quality & Affordability', 'Next-Gen Technology'].map((item, i) => (
                                 <div key={i} className="flex items-center gap-3 p-4 border border-black/10 bg-white/40 rounded-lg hover:bg-rose/10 transition-colors cursor-default">
                                     <div className="w-2 h-2 bg-cta rounded-full"></div>
-                                    <span className="text-heading text-sm uppercase tracking-wider">{item}</span>
+                                    <span className="w-2 h-2">{item}</span>
                                 </div>
                             ))}
                         </div>

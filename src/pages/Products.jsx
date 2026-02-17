@@ -14,7 +14,7 @@ export default function Products() {
 
                 {/* Header */}
                 <div className="mb-20 text-left">
-                    <h1 className="text-5xl md:text-7xl font-serif text-heading mb-6">Our Collections</h1>
+                    <h1 className="text-5xl md:text-7xl font-serif text-heading mb-6">Our Signature Products</h1>
                     <p className="text-body-text max-w-2xl font-light text-lg">
                         Explore our meticulously curated selection of premium interior finishes.
                         Each category is designed to bring specific character and utility to your space.

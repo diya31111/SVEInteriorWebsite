@@ -6,14 +6,16 @@
 
 @layer base {
     :root {
-        /* BACKGROUNDS */
+        /* PRIMARY BACKGROUNDS */
+        --bg-primary: #f4e9e2;
+        --bg-secondary: #ecdccf;
         --bg-white: #FFFFFF;
         --bg-blush: #F1DDDA;
         --bg-rose: #8C5E5A;
         --bg-footer: #333333;
 
         /* TEXT COLORS */
-        --text-heading: #7A5C58;
+        --text-heading: #5a3e3e;
         --text-body: #555555;
         --text-white: #FFFFFF;
 
@@ -27,11 +29,19 @@
 
     body {
         font-family: 'Montserrat', sans-serif;
-        background-color: var(--bg-white);
+        background-color: var(--bg-primary) !important;
         color: var(--text-body);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         line-height: 1.7;
+    }
+
+    #root {
+        background-color: var(--bg-primary) !important;
+    }
+
+    section {
+        background-color: var(--bg-primary);
     }
 
     h1,

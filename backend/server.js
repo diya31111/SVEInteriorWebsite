@@ -26,6 +26,12 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+// Check for missing credentials at startup
+if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    console.warn('\n⚠️  Gmail credentials missing in .env. Skipping email dispatch.');
+    console.warn('   To enable auto-response emails, set EMAIL_USER and EMAIL_PASS in backend/.env\n');
+}
+
 // Routes
 app.post('/api/save-contact', (req, res) => {
     const { firstName, lastName, email, message } = req.body;
@@ -50,13 +56,18 @@ app.post('/api/save-contact', (req, res) => {
             id: this.lastID
         });
 
-        // Send Auto-Response Email (Fixed Template)
+        // Send Auto-Response Email (SVE Signature Template)
+        if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+            console.log('Gmail credentials not configured — skipping auto-response email.');
+            return;
+        }
+
         try {
             const emailContent = `Dear ${firstName},
 
-Thank you for reaching out to SVE Interior. We have successfully received your inquiry and our design team is currently reviewing your message.
+Thank you for reaching out to SVE Interior. We have received your message and our design team—led by Yash and Nidhi Mamoria—will review your requirements shortly.
 
-At SVE Interior, we are committed to defining luxury through excellent interior concepts. A member of our team will contact you within 24 hours to discuss your requirements in detail.
+With over 15 years of experience and 15,000+ completed projects, we are committed to delivering excellence. A consultant will contact you within 24 hours.
 
 Best regards,
 The SVE Team`;
@@ -64,20 +75,19 @@ The SVE Team`;
             await transporter.sendMail({
                 from: process.env.EMAIL_USER,
                 to: email,
-                subject: "We've received your inquiry - SVE Interior",
+                subject: "We've received your inquiry — SVE Interior",
                 text: emailContent
             });
 
-            console.log(`Auto-response sent to ${email}`);
+            console.log(`✅ Auto-response sent to ${email}`);
 
         } catch (error) {
             console.error('Auto-response failed:', error.message);
-            // Fallback: Log the intended email to console if sending fails due to auth issues
-            console.log("--- FAILED EMAIL CONTENT LOG ---");
+            console.log('--- FAILED EMAIL CONTENT LOG ---');
             console.log(`To: ${email}`);
-            console.log(`Subject: We've received your inquiry - SVE Interior`);
-            console.log(`Dear ${firstName}, ... [Standard Template] ...`);
-            console.log("--------------------------------");
+            console.log(`Subject: We've received your inquiry — SVE Interior`);
+            console.log(`Dear ${firstName}, ... [SVE Signature Template] ...`);
+            console.log('--------------------------------');
         }
     });
 });
