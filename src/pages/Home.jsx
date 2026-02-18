@@ -201,8 +201,8 @@ export default function Home() {
             {/* Transformation Showcase */}
             {/* Transformation Showcase */}
             <BeforeAfter
-                beforeImage="/src/assets/WhatsApp Image 2026-02-09 at 5.33.49 PM.jpeg"
-                afterImage="/src/assets/WhatsApp Image 2026-02-09 at 5.33.48 PM.jpeg"
+                beforeImage="/before-after-before.jpeg"
+                afterImage="/before-after-after.jpeg"
             />
 
             {/* Testimonials */}
