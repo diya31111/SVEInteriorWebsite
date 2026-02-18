@@ -15,7 +15,7 @@ export const galleryImages = [
         id: "gal-3",
         title: "Mid-Century Modern Bedroom",
         category: "Bedroom",
-        image: "https://images.unsplash.com/photo-1616594039964-40891a91395b?q=80&w=1200&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1200"
     },
     {
         id: "gal-4",
@@ -67,15 +67,15 @@ export const galleryImages = [
     },
     {
         id: "gal-12",
-        title: "Walk-in Closet Suite",
-        category: "Bedroom",
+        title: "Emerald Green Living Room",
+        category: "Living Room",
         image: "https://images.unsplash.com/photo-1551516594-56cb78394645?q=80&w=1200&auto=format&fit=crop"
     },
     {
         id: "gal-13",
-        title: "Art Deco Hallway",
+        title: "Grand Entrance Foyer",
         category: "Entrance",
-        image: "https://images.unsplash.com/photo-1551516594-56cb78394645?q=80&w=1200&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop"
     },
     {
         id: "gal-14",

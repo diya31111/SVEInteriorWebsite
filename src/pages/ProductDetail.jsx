@@ -63,7 +63,7 @@ export default function ProductDetail() {
             className="bg-primary min-h-screen"
         >
             {/* Back to Curation — Sleek thin-lined arrow */}
-            <div className="fixed top-28 left-6 z-30">
+            <div className="fixed top-36 left-6 z-30">
                 <Link
                     to="/our-products"
                     className="group inline-flex items-center gap-3 bg-secondary/80 backdrop-blur-md border border-soft-border rounded-full pl-3 pr-5 py-2.5 hover:border-cta transition-all duration-300 shadow-sm"
@@ -158,52 +158,6 @@ export default function ProductDetail() {
                             <p className="text-heading/60 text-sm leading-relaxed font-light italic">
                                 Reflecting our 15-year legacy of precision, these {product.title} solutions are designed to translate your vision into a functional, aesthetically refined environment.
                             </p>
-                        </motion.div>
-
-                        {/* Statistical Quality Badges */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.85 }}
-                            className="flex gap-4 mt-8 mb-8"
-                        >
-                            <div className="flex items-center gap-2 bg-secondary rounded-full px-4 py-2">
-                                <Award size={14} className="text-cta" />
-                                <span className="text-[10px] uppercase tracking-wider font-bold text-heading/70">15+ Years of Refined Taste</span>
-                            </div>
-                            <div className="flex items-center gap-2 bg-secondary rounded-full px-4 py-2">
-                                <CheckCircle size={14} className="text-cta" />
-                                <span className="text-[10px] uppercase tracking-wider font-bold text-heading/70">15,000+ Success Stories</span>
-                            </div>
-                        </motion.div>
-
-                        {/* The Specification Grid */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 1.0 }}
-                            className="grid grid-cols-2 gap-px bg-heading/10 rounded-lg overflow-hidden mb-8"
-                        >
-                            <div className="bg-secondary/50 p-5">
-                                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Material</span>
-                                <span className="text-sm font-light text-heading">{product.material}</span>
-                            </div>
-                            <div className="bg-secondary/50 p-5">
-                                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Durability</span>
-                                <span className="text-sm font-light text-heading">{product.durability}</span>
-                            </div>
-                            <div className="bg-secondary/50 p-5">
-                                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Applications</span>
-                                <div className="flex gap-2">
-                                    {specs.applications.map((app, i) => (
-                                        <span key={i} className="text-[10px] bg-cta/10 text-cta font-bold uppercase tracking-wider px-2.5 py-1 rounded-sm">{app}</span>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="bg-secondary/50 p-5">
-                                <span className="text-[9px] uppercase tracking-[0.2em] font-bold text-heading/40 block mb-2">Craftsmanship</span>
-                                <span className="text-sm font-light text-heading">{specs.craftsmanship}</span>
-                            </div>
                         </motion.div>
 
                         {/* Best Use */}

@@ -1,42 +1,5 @@
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 import BrandPartners from '../components/BrandPartners';
-
-const stats = [
-    { label: "Years of Excellence", value: 15, suffix: "+", width: "85%" },
-    { label: "Completed Projects", value: 15000, suffix: "+", width: "95%" },
-    { label: "Corporate Clients", value: 500, suffix: "+", width: "80%" },
-    { label: "Customer Recommendations", value: 6000, suffix: "+", width: "90%" },
-];
-
-const StatBar = ({ label, value, suffix, delay, width }) => {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-50px" });
-
-    return (
-        <div ref={ref} className="mb-10">
-            <div className="flex justify-between items-end mb-3">
-                <h4 className="text-sm font-bold text-muted-brown uppercase tracking-[0.2em]">{label}</h4>
-                <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-                    transition={{ duration: 1, delay: delay + 0.5, ease: "easeOut" }}
-                    className="text-4xl font-serif text-heading leading-none"
-                >
-                    {value}{suffix}
-                </motion.div>
-            </div>
-            <div className="relative h-[2px] w-full bg-white/10 rounded-full overflow-hidden">
-                <motion.div
-                    initial={{ width: 0 }}
-                    animate={isInView ? { width: width } : { width: 0 }}
-                    transition={{ duration: 1.5, delay: delay, ease: "easeInOut" }}
-                    className="h-full bg-gradient-to-r from-gold/50 via-gold to-gold/50 absolute left-0 top-0"
-                />
-            </div>
-        </div>
-    );
-};
 
 export default function About() {
     return (
@@ -61,11 +24,6 @@ export default function About() {
                             Founded by Yash &amp; Nidhi Mamoria, SVE Interior has grown from a passion project into one of Rajasthan's leading interior showrooms. Every decision we make is guided by balance—between innovation and timelessness—ensuring spaces that feel both modern and enduring.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 pt-8 border-t border-black/5">
-                            {stats.map((stat, index) => (
-                                <StatBar key={index} {...stat} delay={0.2 * index} />
-                            ))}
-                        </div>
                     </motion.div>
 
                     <motion.div
@@ -204,8 +162,8 @@ export default function About() {
                         <div className="grid grid-cols-2 gap-6">
                             {['Curated Signature Products', 'Talented Professionals', 'Quality & Affordability', 'Next-Gen Technology'].map((item, i) => (
                                 <div key={i} className="flex items-center gap-3 p-4 border border-black/10 bg-white/40 rounded-lg hover:bg-rose/10 transition-colors cursor-default">
-                                    <div className="w-2 h-2 bg-cta rounded-full"></div>
-                                    <span className="w-2 h-2">{item}</span>
+                                    <div className="w-2 h-2 bg-cta rounded-full flex-shrink-0"></div>
+                                    <span className="text-sm font-medium text-heading">{item}</span>
                                 </div>
                             ))}
                         </div>

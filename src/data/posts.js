@@ -81,7 +81,7 @@ export const posts = [
         title: "TENSILE STRUCTURE MANUFACTURERS IN RAJASTHAN",
         category: "OUTDOOR STRUCTURES",
         date: "January 20, 2024",
-        image: "https://images.unsplash.com/photo-1596245970222-54fb0199e433?q=80&w=1200&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1200",
         excerpt: "Tensile Structure Manufacturers have become increasingly popular in recent years as a cost-effective and aesthetically pleasing solution for providing shade and shelter. They are used in a variety of applications, from car parks to sports facilities.",
         tags: ["Best Home Furnishing Showroom in Jaipur", "Designer Sofa Fabrics in Jaipur", "Outdoor Deckwood in Jaipur", "Stretch Ceiling Supplier in Jaipur", "Tensile Structure Manufacturers in Jaipur", "Tensile Structure Manufacturers in Rajasthan", "Wooden Flooring Distributor in Jaipur"],
         content: `

@@ -62,11 +62,9 @@ export default function Blog() {
 
                                 {/* Text Side — 50% */}
                                 <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                                    {/* Category & Date */}
+                                    {/* Category */}
                                     <div className="flex items-center gap-3 mb-4 text-[10px] sm:text-xs tracking-widest uppercase font-bold">
                                         <span className="text-cta">{post.category || "Design"}</span>
-                                        <span className="text-soft-border">•</span>
-                                        <span className="text-body-text/60">{post.date}</span>
                                     </div>
 
                                     {/* Title — Serif, Brand Burgundy */}

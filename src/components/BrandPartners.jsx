@@ -46,15 +46,15 @@ function BrandLogo({ brand, index }) {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.03 }}
-            className="group relative aspect-square border border-[#5a3e3e]/10 p-6 flex items-center justify-center bg-secondary hover:bg-blush/40 transition-colors duration-300 cursor-default rounded-lg"
+            className="group relative aspect-square border border-[#5a3e3e]/10 p-3 flex items-center justify-center bg-transparent hover:bg-blush/30 transition-colors duration-300 cursor-default rounded-lg"
         >
             {brand.logo ? (
                 <img
                     src={brand.logo}
                     alt={`${brand.name} Logo`}
                     loading="lazy"
-                    className="object-contain transition-all duration-500 transform group-hover:scale-110"
-                    style={{ maxHeight: '70%', maxWidth: '80%' }}
+                    className="object-contain transition-all duration-500 transform group-hover:scale-115"
+                    style={{ maxHeight: '85%', maxWidth: '85%', mixBlendMode: 'multiply' }}
                     onError={(e) => {
                         e.target.style.display = 'none';
                         if (e.target.nextSibling) e.target.nextSibling.style.display = 'flex';

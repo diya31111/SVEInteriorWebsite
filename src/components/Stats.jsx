@@ -23,7 +23,7 @@ function Counter({ value, label }) {
     }, [displayValue]);
 
     return (
-        <div ref={ref} className="text-center py-8 border-r border-soft-border last:border-r-0 h-full flex flex-col justify-center bg-white rounded-xl border border-soft-border shadow-sm">
+        <div ref={ref} className="text-center py-10 h-full flex flex-col justify-center bg-[#f4e9e2] rounded-lg border border-[#5a3e3e]/15">
             <motion.div
                 className="text-5xl md:text-6xl font-serif font-bold text-heading mb-2"
             >
@@ -36,13 +36,12 @@ function Counter({ value, label }) {
 
 export default function Stats() {
     return (
-        <section className="bg-white border-y border-soft-border py-20">
+        <section className="bg-[#f4e9e2] border-y border-[#5a3e3e]/10 py-20">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <Counter value={15} label="Years of Design Excellence" />
                     <Counter value={15000} label="Successfully Completed Projects" />
                     <Counter value={500} label="Corporate Clients Nationwide" />
-                    <Counter value={6000} label="Direct Customer Recommendations" />
                 </div>
             </div>
         </section>
