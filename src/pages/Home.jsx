@@ -20,7 +20,7 @@ export default function Home() {
     const y1 = useTransform(scrollY, [0, 500], [0, 200]);
 
     return (
-        <div className="overflow-x-hidden bg-white">
+        <div className="overflow-x-hidden bg-[#f4e9e2]">
             {/* Hero Section - Blush Background */}
             <section className="relative h-screen flex items-center justify-center overflow-hidden bg-blush">
                 {/* Background with Slow Scale Animation - Optional Image or just Blush color */}
@@ -97,7 +97,7 @@ export default function Home() {
             <WhyChooseUs />
 
             {/* Featured Signature Products Preview */}
-            <section className="py-32 px-6 bg-white">
+            <section className="py-32 px-6 bg-[#f4e9e2]">
                 <div className="container mx-auto">
                     <div className="flex flex-col md:flex-row justify-between items-end mb-12">
                         <div>
@@ -117,25 +117,24 @@ export default function Home() {
                         <div className="flex flex-col gap-6">
                             {/* Tall Item */}
                             <Link
-                                to={`/collections/${products[0].id}`}
-                                className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[300px] md:h-[376px] block"
+                                to={`/collections/${products[1].id}`}
+                                className="relative group overflow-hidden cursor-pointer bg-[#f4e9e2] rounded-xl border border-soft-border h-[300px] md:h-[376px] block"
                             >
-                                <img src={products[0].image} alt="Luxury Interior" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80 transition-opacity"></div>
-                                <div className="absolute bottom-8 left-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 className="text-3xl font-serif text-white mb-2">{products[0].title}</h3>
-                                    <p className="text-white/80 text-xs max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed">{products[0].description}</p>
+                                <img src={products[1].image} alt={products[1].title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none z-[5]"></div>
+                                <div className="absolute bottom-4 left-4 right-4 flex justify-center z-10">
+                                    <span className="product-label">{products[1].title}</span>
                                 </div>
                             </Link>
                             {/* Short Item */}
                             <Link
-                                to={`/collections/${products[1].id}`}
-                                className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[200px] md:h-[200px] block"
+                                to={`/collections/${products[5].id}`}
+                                className="relative group overflow-hidden cursor-pointer bg-[#f4e9e2] rounded-xl border border-soft-border h-[200px] md:h-[200px] block"
                             >
-                                <img src={products[1].image} alt="Wallpapers" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div className="absolute bottom-6 left-8">
-                                    <h3 className="text-2xl font-serif text-white">{products[1].title}</h3>
+                                <img src={products[5].image} alt={products[5].title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none z-[5]"></div>
+                                <div className="absolute bottom-4 left-4 right-4 flex justify-center z-10">
+                                    <span className="product-label">{products[5].title}</span>
                                 </div>
                             </Link>
                         </div>
@@ -145,24 +144,23 @@ export default function Home() {
                             {/* Short Item */}
                             <Link
                                 to={`/collections/${products[2].id}`}
-                                className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[200px] md:h-[200px] block"
+                                className="relative group overflow-hidden cursor-pointer bg-[#f4e9e2] rounded-xl border border-soft-border h-[200px] md:h-[200px] block"
                             >
-                                <img src={products[2].image} alt="Blinds" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div className="absolute bottom-6 left-8">
-                                    <h3 className="text-2xl font-serif text-white">{products[2].title}</h3>
+                                <img src={products[2].image} alt={products[2].title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none z-[5]"></div>
+                                <div className="absolute bottom-4 left-4 right-4 flex justify-center z-10">
+                                    <span className="product-label">{products[2].title}</span>
                                 </div>
                             </Link>
                             {/* Tall Item */}
                             <Link
-                                to={`/collections/${products[4].id}`}
-                                className="relative group overflow-hidden cursor-pointer bg-white rounded-xl border border-soft-border h-[300px] md:h-[376px] block"
+                                to={`/collections/${products[6].id}`}
+                                className="relative group overflow-hidden cursor-pointer bg-[#f4e9e2] rounded-xl border border-soft-border h-[300px] md:h-[376px] block"
                             >
-                                <img src={products[4].image} alt="Flooring" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <div className="absolute bottom-8 left-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <h3 className="text-3xl font-serif text-white mb-2">{products[4].title}</h3>
-                                    <p className="text-white/80 text-xs max-w-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 leading-relaxed">{products[4].description}</p>
+                                <img src={products[6].image} alt={products[6].title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none z-[5]"></div>
+                                <div className="absolute bottom-4 left-4 right-4 flex justify-center z-10">
+                                    <span className="product-label">{products[6].title}</span>
                                 </div>
                             </Link>
                         </div>
@@ -171,7 +169,7 @@ export default function Home() {
             </section>
 
             {/* Beyond Products: Turnkey Services */}
-            <section className="py-24 bg-white relative">
+            <section className="py-24 bg-[#f4e9e2] relative">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-20">
                         <span className="text-gold tracking-[0.2em] uppercase text-xs font-bold block mb-4">Beyond Decor</span>
@@ -184,7 +182,7 @@ export default function Home() {
                             { icon: HardHat, title: "Civil Contracting", desc: "From false ceilings to electrical grids, we handle the technical execution." },
                             { icon: Hammer, title: "Turnkey Execution", desc: "Hand us the keys to a bare shell, and we hand them back fully furnished." }
                         ].map((item, i) => (
-                            <div key={i} className="bg-white p-12 group hover:shadow-xl transition-all relative overflow-hidden rounded-xl border border-soft-border hover:border-cta h-full">
+                            <div key={i} className="bg-[#f4e9e2] p-12 group hover:shadow-xl transition-all relative overflow-hidden rounded-xl border border-soft-border hover:border-cta h-full">
                                 <div className="mb-8 text-cta/70 group-hover:text-cta transition-colors">
                                     <item.icon size={32} strokeWidth={1} />
                                 </div>
@@ -206,7 +204,7 @@ export default function Home() {
             />
 
             {/* Testimonials */}
-            <section className="py-32 bg-white border-t border-soft-border">
+            <section className="py-32 bg-[#f4e9e2] border-t border-soft-border">
                 <div className="container mx-auto px-6 text-center max-w-6xl">
                     <h2 className="text-3xl font-serif text-heading mb-20">What Our Clients Say</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

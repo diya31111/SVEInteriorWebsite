@@ -80,7 +80,7 @@ export default function Navbar() {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: '100vh' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden absolute top-0 left-0 w-full bg-white z-40 flex flex-col items-center justify-center space-y-8"
+                        className="md:hidden absolute top-0 left-0 w-full bg-[#f4e9e2] z-40 flex flex-col items-center justify-center space-y-8"
                     >
                         <button
                             className="absolute top-6 right-6 text-body-text hover:text-cta"

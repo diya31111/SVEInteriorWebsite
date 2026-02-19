@@ -55,3 +55,30 @@
         color: var(--text-heading);
     }
 }
+
+/* ── Signature Product Label (Parchment Pill – Noir Edition) ── */
+.product-label {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #000000 !important;
+    opacity: 1 !important;
+    background-color: #f4e9e2 !important;
+    padding: 0.6rem 1.8rem;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    letter-spacing: 0.025em;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-label:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}

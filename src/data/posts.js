@@ -4,7 +4,7 @@ export const posts = [
         title: "THE PREMIER HOME FURNISHING SHOWROOM IN RAJA PARK, JAIPUR",
         category: "HOME FURNISHING",
         date: "March 15, 2024",
-        image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+        image: "/showroom-interior.jpeg",
         excerpt: "In the heart of Raja Park, Jaipur, lies a treasure trove of exquisite home furnishings and décor – SVE Interior. Renowned for its impeccable taste, unparalleled quality, and exceptional customer service, SVE Interior has established itself as the premier destination for homeowners looking to elevate their living spaces.",
         tags: ["Designer Sofa Fabrics in Raja Park", "Home Furnishing Showroom in Raja Park", "Home Furnishing Store in Jaipur", "Home Furnishing Store in Raja Park", "Luxury Interior Product Showroom in Jaipur", "Luxury Interior Product Showroom in Raja Park"],
         content: `

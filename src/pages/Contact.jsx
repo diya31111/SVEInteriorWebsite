@@ -59,7 +59,7 @@ export default function Contact() {
                         transition={{ duration: 0.8 }}
                         className="space-y-8"
                     >
-                        <div className="bg-white p-8 rounded-2xl border border-soft-border hover:border-cta transition-colors">
+                        <div className="bg-[#f4e9e2] p-8 rounded-2xl border border-soft-border hover:border-cta transition-colors">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-rose/10 rounded-full flex items-center justify-center flex-shrink-0">
                                     <MapPin className="text-rose" size={24} />
@@ -74,7 +74,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <div className="bg-white p-8 rounded-2xl border border-soft-border hover:border-cta transition-colors">
+                        <div className="bg-[#f4e9e2] p-8 rounded-2xl border border-soft-border hover:border-cta transition-colors">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-rose/10 rounded-full flex items-center justify-center flex-shrink-0">
                                     <Phone className="text-rose" size={24} />
@@ -89,7 +89,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <div className="bg-white p-8 rounded-2xl border border-soft-border hover:border-cta transition-colors">
+                        <div className="bg-[#f4e9e2] p-8 rounded-2xl border border-soft-border hover:border-cta transition-colors">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-rose/10 rounded-full flex items-center justify-center flex-shrink-0">
                                     <Mail className="text-rose" size={24} />

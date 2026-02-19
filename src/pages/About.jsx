@@ -46,7 +46,7 @@ export default function About() {
             </section>
 
             {/* Design is Our Passion Section */}
-            <section className="bg-white py-32 my-32 relative">
+            <section className="bg-[#f4e9e2] py-32 my-32 relative">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-rose/20 to-transparent"></div>
                     <div className="absolute top-0 right-1/4 w-px h-full bg-gradient-to-b from-transparent via-rose/20 to-transparent"></div>
@@ -123,7 +123,7 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: i * 0.2 }}
-                            className="bg-white rounded-2xl overflow-hidden border border-soft-border shadow-sm hover:shadow-lg transition-shadow duration-500 group"
+                            className="bg-[#f4e9e2] rounded-2xl overflow-hidden border border-soft-border shadow-sm hover:shadow-lg transition-shadow duration-500 group"
                         >
                             <div className="h-72 overflow-hidden">
                                 <img
@@ -161,7 +161,7 @@ export default function About() {
 
                         <div className="grid grid-cols-2 gap-6">
                             {['Curated Signature Products', 'Talented Professionals', 'Quality & Affordability', 'Next-Gen Technology'].map((item, i) => (
-                                <div key={i} className="flex items-center gap-3 p-4 border border-black/10 bg-white/40 rounded-lg hover:bg-rose/10 transition-colors cursor-default">
+                                <div key={i} className="flex items-center gap-3 p-4 border border-black/10 bg-[#f4e9e2]/40 rounded-lg hover:bg-rose/10 transition-colors cursor-default">
                                     <div className="w-2 h-2 bg-cta rounded-full flex-shrink-0"></div>
                                     <span className="text-sm font-medium text-heading">{item}</span>
                                 </div>

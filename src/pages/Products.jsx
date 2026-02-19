@@ -29,17 +29,16 @@ export default function Products() {
                             to={`/collections/${product.id}`}
                             className="break-inside-avoid mb-8 cursor-pointer group block"
                         >
-                            <div className="relative overflow-hidden rounded-xl bg-gray-100 aspect-square md:aspect-[3/4] shadow-sm hover:shadow-md transition-all duration-300 border border-soft-border">
+                            <div className="relative overflow-hidden rounded-xl bg-[#f4e9e2] aspect-square md:aspect-[3/4] shadow-sm hover:shadow-md transition-all duration-300 border border-soft-border">
                                 <img
                                     src={product.image}
                                     alt={product.title}
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none z-[5]" />
 
-                                <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-white/90 to-transparent">
-                                    <h2 className="text-2xl font-serif text-heading">{product.title}</h2>
-                                    <p className="text-body-text text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-1">Tap for summary</p>
+                                <div className="absolute bottom-4 left-4 right-4 flex justify-center z-10">
+                                    <span className="product-label">{product.title}</span>
                                 </div>
                             </div>
                         </Link>

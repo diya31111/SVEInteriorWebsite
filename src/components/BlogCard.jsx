@@ -4,7 +4,7 @@ export default function BlogCard({ post }) {
     return (
         <Link
             to={`/blog/${post.id}`}
-            className="group flex flex-col h-full bg-white rounded-xl overflow-hidden border border-soft-border hover:shadow-2xl hover:border-cta/30 transition-all duration-500 block"
+            className="group flex flex-col h-full bg-[#f4e9e2] rounded-xl overflow-hidden border border-soft-border hover:shadow-2xl hover:border-cta/30 transition-all duration-500 block"
         >
             {/* Cover Image — Large */}
             <div className="relative aspect-[4/3] overflow-hidden">

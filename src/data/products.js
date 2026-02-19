@@ -2,7 +2,7 @@ export const products = [
     {
         id: "wallpaper",
         title: "Wallpaper",
-        image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=1200&auto=format&fit=crop",
         gallery: [
             "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=1200&auto=format&fit=crop",
@@ -17,7 +17,7 @@ export const products = [
     {
         id: "wooden-flooring",
         title: "Wooden Flooring",
-        image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200&auto=format&fit=crop",
+        image: "/product-flooring.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1622372738946-a287d37265be?q=80&w=1200&auto=format&fit=crop",
@@ -32,7 +32,7 @@ export const products = [
     {
         id: "stretch-ceiling",
         title: "Stretch Ceiling",
-        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
+        image: "/product-stretch-ceiling.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
@@ -62,7 +62,7 @@ export const products = [
     {
         id: "decking-cladding",
         title: "Decking & Cladding",
-        image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1200&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
         gallery: [
             "https://images.unsplash.com/photo-1502005229766-31e47920ab6b?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
@@ -77,7 +77,7 @@ export const products = [
     {
         id: "curtains",
         title: "Curtains",
-        image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+        image: "/product-curtains.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1505691938895-1cd10274425d?q=80&w=1200&auto=format&fit=crop",
@@ -92,7 +92,7 @@ export const products = [
     {
         id: "blinds",
         title: "Blinds",
-        image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+        image: "/product-blinds.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1594122230689-42b8b688dccc?q=80&w=1200&auto=format&fit=crop",
@@ -107,7 +107,7 @@ export const products = [
     {
         id: "acoustic-panels",
         title: "Acoustic Panels",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+        image: "/product-acoustic-panels.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop",

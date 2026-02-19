@@ -50,7 +50,7 @@ const clients = [
 
 export default function ClientShowcase() {
     return (
-        <section className="py-20 bg-white border-t border-soft-border">
+        <section className="py-20 bg-[#f4e9e2] border-t border-soft-border">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-serif text-heading tracking-wide mb-6">Trusted by the Best: <span className="italic text-cta">Our Corporate & Commercial Portfolio</span></h2>

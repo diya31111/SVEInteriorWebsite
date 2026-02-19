@@ -79,7 +79,7 @@ export default function WhyChooseUs() {
                     {features.map((feature, index) => (
                         <SpotlightCard
                             key={index}
-                            className={`bg-white rounded-xl group border border-soft-border ${index % 2 !== 0 ? 'lg:mt-12' : ''}`}
+                            className={`bg-[#f4e9e2] rounded-xl group border border-soft-border ${index % 2 !== 0 ? 'lg:mt-12' : ''}`}
                             spotlightColor="rgba(212, 175, 55, 0.15)"
                         >
                             <div className="p-8 h-full relative z-10">

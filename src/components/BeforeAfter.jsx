@@ -34,7 +34,7 @@ export default function BeforeAfter({
     }, []);
 
     return (
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-[#f4e9e2]">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <span className="text-gold tracking-[0.2em] uppercase text-xs font-bold block mb-4">Transformation</span>
