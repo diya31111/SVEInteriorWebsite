@@ -143,7 +143,7 @@ export default function About() {
             </section>
 
             {/* Now We Have Section */}
-            <section className="container mx-auto px-6 mb-32 bg-[#F1DDDA] rounded-3xl p-12 lg:p-16">
+            <section className="container mx-auto px-6 mb-32 rounded-3xl p-12 lg:p-16" style={{ backgroundColor: '#F1DDDA' }}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
