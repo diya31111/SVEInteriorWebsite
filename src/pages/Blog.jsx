@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { posts } from '../data/posts';
@@ -49,7 +49,7 @@ export default function Blog() {
                         >
                             {/* Card with glassmorphism-style surface */}
                             <div className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-0 border border-soft-border rounded-xl overflow-hidden bg-secondary hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 group`}>
-                                {/* Image Side — 50% */}
+                                {/* Image Side-50% */}
                                 <div className="w-full md:w-1/2 relative overflow-hidden">
                                     <Link to={`/blog/${post.id}`} className="block h-full">
                                         <img
@@ -60,14 +60,14 @@ export default function Blog() {
                                     </Link>
                                 </div>
 
-                                {/* Text Side — 50% */}
+                                {/* Text Side-50% */}
                                 <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
                                     {/* Category */}
                                     <div className="flex items-center gap-3 mb-4 text-[10px] sm:text-xs tracking-widest uppercase font-bold">
                                         <span className="text-cta">{post.category || "Design"}</span>
                                     </div>
 
-                                    {/* Title — Serif, Brand Burgundy */}
+                                    {/* Title-Serif, Brand Burgundy */}
                                     <Link to={`/blog/${post.id}`}>
                                         <h2 className="text-xl md:text-2xl font-serif font-bold text-heading mb-0 leading-tight hover:text-cta transition-colors duration-300">
                                             {post.title}
@@ -82,7 +82,7 @@ export default function Blog() {
                                         {post.excerpt}
                                     </p>
 
-                                    {/* SEO Keyword Tags — Brand burgundy/deep chocolate */}
+                                    {/* SEO Keyword Tags-Brand burgundy/deep chocolate */}
                                     {post.tags && post.tags.length > 0 && (
                                         <div className="flex flex-wrap gap-2 mb-6">
                                             {post.tags.map((tag, i) => (
@@ -96,7 +96,7 @@ export default function Blog() {
                                         </div>
                                     )}
 
-                                    {/* Read More Button — Dark branded */}
+                                    {/* Read More Button-Dark branded */}
                                     <div className="mt-auto">
                                         <Link
                                             to={`/blog/${post.id}`}

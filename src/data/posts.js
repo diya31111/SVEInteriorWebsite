@@ -1,4 +1,4 @@
-export const posts = [
+﻿export const posts = [
     {
         id: "premier-home-furnishing-showroom",
         title: "THE PREMIER HOME FURNISHING SHOWROOM IN RAJA PARK, JAIPUR",
@@ -117,7 +117,7 @@ export const posts = [
         category: "HOME FURNISHING",
         date: "January 4, 2022",
         image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "Discover complete interior solutions for your windows. Learn everything about choosing curtains with premium product quality—guided by balance between innovation and timelessness.",
+        excerpt: "Discover complete interior solutions for your windows. Learn everything about choosing curtains with premium product quality-guided by balance between innovation and timelessness.",
         content: `
             <p class="lead">Imagine sleeping in on the weekend peacefully, dreaming of swimming in a heap of all your favorite snacks. You pick one up and are just about to take a big bite out of it when you're suddenly blinded with a strong light, waking you up to face reality. It's the bright sunlight!</p>
 
@@ -169,7 +169,7 @@ export const posts = [
             <p>The length of your curtain doesn't have to match the length of your window. Floor-length curtains give your room a more polished look. Curtains longer than floor-length add luxury to the design. Those that float right about the floor are suitable for carpeted rooms with modern furniture.</p>
 
             <h3>The Takeaway</h3>
-            <p>The purpose of using curtains decides the type of curtains you should buy. Different curtains pertain to different purposes and you should choose based on your needs. Whether you want to decorate the whole room, make windows look taller, separate rooms, or simply block out the sunlight — the right curtain is out there for you.</p>
+            <p>The purpose of using curtains decides the type of curtains you should buy. Different curtains pertain to different purposes and you should choose based on your needs. Whether you want to decorate the whole room, make windows look taller, separate rooms, or simply block out the sunlight-the right curtain is out there for you.</p>
         `
     },
     {
@@ -185,7 +185,7 @@ export const posts = [
             <p>One way to create a beautiful and functional outdoor oasis is by adding a pergola. These elegant structures provide shade, create a sense of separation, and add visual interest to any backyard or patio. They are often used to define outdoor living areas, such as dining or seating areas, and can be used to support climbing plants or vines.</p>
 
             <h2>Why Choose SVE Interiors for Your Pergola</h2>
-            <p>If you are considering adding a pergola to your outdoor space, SVE Interiors is one of the best pergola manufacturers in Jaipur, known for skilled craftsmen and creating beautiful outdoor structures. We offer a wide range of options to suit any style or budget — from classic wood pergolas to modern metal designs.</p>
+            <p>If you are considering adding a pergola to your outdoor space, SVE Interiors is one of the best pergola manufacturers in Jaipur, known for skilled craftsmen and creating beautiful outdoor structures. We offer a wide range of options to suit any style or budget-from classic wood pergolas to modern metal designs.</p>
 
             <p>One of the advantages of working with SVE Interiors is the opportunity to customize your pergola to meet your specific needs and preferences. We offer a range of sizes, shapes, and materials to choose from, allowing you to create a pergola that is truly unique and reflects your personal style.</p>
 
@@ -193,7 +193,7 @@ export const posts = [
             <p>It is important to consider the quality and durability of the materials used. Wood pergolas are a classic choice, constructed from cedar, redwood, or teak. Metal pergolas offer a modern and low-maintenance option, made from aluminium or steel. Whichever material you choose, we make sure to only use high-quality materials and construction techniques to ensure a long-lasting and beautiful pergola.</p>
 
             <h2>Practical Benefits of Pergolas</h2>
-            <p>In addition to their beauty and functionality, pergolas are also a practical choice. They provide shade on hot days, reducing energy costs by lessening the need for air conditioning. They also protect from rain and wind, making outdoor spaces more comfortable. Pergolas are also a great way to add value to your home — increasingly popular with home buyers.</p>
+            <p>In addition to their beauty and functionality, pergolas are also a practical choice. They provide shade on hot days, reducing energy costs by lessening the need for air conditioning. They also protect from rain and wind, making outdoor spaces more comfortable. Pergolas are also a great way to add value to your home-increasingly popular with home buyers.</p>
 
             <h2>Ideas for Your Pergola</h2>
             <ul>
@@ -216,7 +216,7 @@ export const posts = [
         category: "WALL DECOR",
         date: "February 3, 2023",
         image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "Explore our expert wall cladding solutions offering premium product quality. From metal to stone, discover complete interior solutions guided by balance—between innovation and timelessness.",
+        excerpt: "Explore our expert wall cladding solutions offering premium product quality. From metal to stone, discover complete interior solutions guided by balance-between innovation and timelessness.",
         content: `
             <p class="lead">Cladding refers to the application of one material over another to provide a protective layer or to enhance the appearance of a building. Cladding solutions are an important aspect of modern construction, providing a range of benefits such as insulation, weather protection, and a decorative finish.</p>
 
@@ -239,7 +239,7 @@ export const posts = [
 
             <h2>Benefits of Cladding Solutions</h2>
             <ul>
-                <li><strong>Increased Insulation:</strong> Provides an extra layer of insulation, reducing energy costs — especially important in areas with extreme weather conditions.</li>
+                <li><strong>Increased Insulation:</strong> Provides an extra layer of insulation, reducing energy costs-especially important in areas with extreme weather conditions.</li>
                 <li><strong>Improved Weather Protection:</strong> A protective layer that extends a building's lifespan against wind, rain, and hail.</li>
                 <li><strong>Enhanced Aesthetic Appeal:</strong> Adds a decorative touch with a range of materials and finishes to complement any style.</li>
                 <li><strong>Low Maintenance:</strong> Many types, such as metal and vinyl, require very little upkeep.</li>
@@ -276,13 +276,13 @@ export const posts = [
 
             <h2>Key Benefits</h2>
             <h3>Aesthetic Excellence</h3>
-            <p>Stretch ceilings eliminate the imperfections of traditional plastered ceilings — no cracks, no uneven patches, no visible joints. The surface is consistently smooth and can be designed to complement any interior theme.</p>
+            <p>Stretch ceilings eliminate the imperfections of traditional plastered ceilings-no cracks, no uneven patches, no visible joints. The surface is consistently smooth and can be designed to complement any interior theme.</p>
 
             <h3>Integrated Lighting</h3>
             <p>One of the biggest advantages is the ability to embed LED strips, recessed lights, and even fiber-optic starlight effects within the ceiling system. This transforms the ceiling from a forgotten surface into a dramatic design feature.</p>
 
             <h3>Moisture & Mold Resistance</h3>
-            <p>PVC stretch ceilings are inherently waterproof, making them ideal for bathrooms, kitchens, and pool areas. They resist mold and condensation — a common problem with plaster ceilings in humid climates like Jaipur.</p>
+            <p>PVC stretch ceilings are inherently waterproof, making them ideal for bathrooms, kitchens, and pool areas. They resist mold and condensation-a common problem with plaster ceilings in humid climates like Jaipur.</p>
 
             <h3>Quick Installation</h3>
             <p>Unlike false ceilings that generate dust and require days of work, stretch ceilings can be installed in a matter of hours with minimal disruption. No heavy framework or wet plastering is needed.</p>
@@ -302,7 +302,7 @@ export const posts = [
             <p class="lead">Acoustic panels are no longer just for recording studios and conference rooms. With the rise of remote work and open-plan living, sound management has become a critical part of interior design. Modern acoustic panels combine engineering precision with stunning aesthetics to solve noise problems beautifully.</p>
 
             <h2>The Problem: Noise in Modern Spaces</h2>
-            <p>Contemporary architecture favors hard surfaces — glass, concrete, polished floors — that look stunning but create terrible acoustics. Sound bounces off these surfaces, creating echo, reverberation, and a general lack of audio clarity. This is especially problematic in:</p>
+            <p>Contemporary architecture favors hard surfaces-glass, concrete, polished floors-that look stunning but create terrible acoustics. Sound bounces off these surfaces, creating echo, reverberation, and a general lack of audio clarity. This is especially problematic in:</p>
             <ul>
                 <li>Home offices where video calls require clear audio</li>
                 <li>Open-plan living spaces where TV, conversations, and kitchen noise mix</li>
@@ -313,7 +313,7 @@ export const posts = [
             <h2>Types of Acoustic Panels</h2>
 
             <h3>Fabric-Wrapped Panels</h3>
-            <p>These are the most common type — a dense fiberglass or mineral wool core wrapped in decorative fabric. Available in thousands of fabric options, they can match any interior. They offer excellent broadband absorption (mid to high frequencies) and are the industry standard for studios and offices.</p>
+            <p>These are the most common type-a dense fiberglass or mineral wool core wrapped in decorative fabric. Available in thousands of fabric options, they can match any interior. They offer excellent broadband absorption (mid to high frequencies) and are the industry standard for studios and offices.</p>
 
             <h3>Wooden Slat Panels</h3>
             <p>The current design favorite. Thin wooden slats mounted over an acoustic felt backing create a stunning visual pattern while absorbing sound. These panels add warmth and texture to a space while being highly functional. They are popular in living rooms, bedrooms, and high-end offices.</p>
@@ -325,7 +325,7 @@ export const posts = [
             <p>The budget-friendly option, commonly seen in home studios and gaming rooms. While effective at high-frequency absorption, they lack the visual refinement of other types. However, newer 3D sculptural foam panels are changing this perception.</p>
 
             <h2>Design-Forward Applications</h2>
-            <p>The best acoustic panels today don't look like acoustic treatment at all. They appear as art, wall features, or architectural elements. At SVE Interior, we offer panels that double as wall art — geometric patterns, custom prints, and natural wood textures that enhance your space both visually and acoustically.</p>
+            <p>The best acoustic panels today don't look like acoustic treatment at all. They appear as art, wall features, or architectural elements. At SVE Interior, we offer panels that double as wall art-geometric patterns, custom prints, and natural wood textures that enhance your space both visually and acoustically.</p>
 
             <h2>Installation at SVE Interior</h2>
             <p>We provide complete acoustic consultation, measuring your room's reverb time (RT60) and recommending the right panel type, quantity, and placement. Our installation team ensures clean, precise mounting with hidden hardware for a seamless look.</p>
@@ -339,7 +339,7 @@ export const posts = [
         image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200&auto=format&fit=crop",
         excerpt: "Choosing the right wooden floor can be daunting. We compare the warmth of engineered wood against the durability of high-pressure laminate to help you decide.",
         content: `
-            <p class="lead">Wood floors are a timeless choice that bring warmth, character, and value to any space. But the modern market offers a bewildering array of options — from solid hardwood to engineered wood to high-pressure laminate. Understanding the differences is crucial to making the right investment for your home.</p>
+            <p class="lead">Wood floors are a timeless choice that bring warmth, character, and value to any space. But the modern market offers a bewildering array of options-from solid hardwood to engineered wood to high-pressure laminate. Understanding the differences is crucial to making the right investment for your home.</p>
 
             <h2>Engineered Wood Flooring</h2>
             <p>Engineered wood is made of a real hardwood veneer (typically 2-6mm thick) bonded to a plywood or HDF core. This construction gives it the authentic look and feel of real wood while dramatically improving its stability.</p>
@@ -347,14 +347,14 @@ export const posts = [
             <h3>Advantages</h3>
             <ul>
                 <li><strong>Real wood surface:</strong> The top layer is genuine hardwood, so it looks, feels, and even ages like solid wood.</li>
-                <li><strong>Dimensional stability:</strong> The cross-layered construction resists expansion and contraction from humidity changes — a critical advantage in Jaipur's climate.</li>
+                <li><strong>Dimensional stability:</strong> The cross-layered construction resists expansion and contraction from humidity changes-a critical advantage in Jaipur's climate.</li>
                 <li><strong>Can be refinished:</strong> Thicker veneers (4mm+) can be sanded and refinished 2-3 times, extending the floor's life by decades.</li>
                 <li><strong>Compatible with underfloor heating:</strong> The stable construction works well with radiant heating systems.</li>
                 <li><strong>Installation versatility:</strong> Can be glued, nailed, or floated over most subfloors.</li>
             </ul>
 
             <h3>Considerations</h3>
-            <p>Engineered wood is more expensive than laminate and the thinner veneers cannot be refinished. It also requires more careful maintenance — avoid excessive water and use recommended cleaning products.</p>
+            <p>Engineered wood is more expensive than laminate and the thinner veneers cannot be refinished. It also requires more careful maintenance-avoid excessive water and use recommended cleaning products.</p>
 
             <h2>Laminate Flooring</h2>
             <p>Laminate flooring is a synthetic product made of a photographic image of wood (or stone) applied to a dense fiberboard core, protected by a clear melamine wear layer. Modern laminates are remarkably realistic.</p>
@@ -362,14 +362,14 @@ export const posts = [
             <h3>Advantages</h3>
             <ul>
                 <li><strong>Affordability:</strong> Significantly cheaper than engineered wood per square foot, making it ideal for large areas.</li>
-                <li><strong>Extreme durability:</strong> The melamine wear layer is highly resistant to scratches, dents, stains, and fading — perfect for high-traffic areas and homes with pets or children.</li>
+                <li><strong>Extreme durability:</strong> The melamine wear layer is highly resistant to scratches, dents, stains, and fading-perfect for high-traffic areas and homes with pets or children.</li>
                 <li><strong>Easy installation:</strong> Click-lock systems allow for fast, glueless floating installation, even as a DIY project.</li>
                 <li><strong>Low maintenance:</strong> Just sweep and occasionally damp-mop. No polishing or special products needed.</li>
                 <li><strong>Wide variety:</strong> Available in countless wood, stone, and tile patterns with consistent coloring.</li>
             </ul>
 
             <h3>Considerations</h3>
-            <p>Laminate cannot be refinished — once the wear layer is damaged, the plank must be replaced. It can feel less authentic underfoot and may produce a hollow sound when walked on. It is also not suitable for wet areas without special waterproof construction.</p>
+            <p>Laminate cannot be refinished-once the wear layer is damaged, the plank must be replaced. It can feel less authentic underfoot and may produce a hollow sound when walked on. It is also not suitable for wet areas without special waterproof construction.</p>
 
             <h2>Making the Right Choice</h2>
             <p>Choose <strong>engineered wood</strong> if you value authenticity, plan to stay in the home long-term, want the option to refinish, and have the budget for a premium product. Choose <strong>laminate</strong> if you need durability on a budget, have a high-traffic household, want easy DIY installation, or are outfitting a rental property.</p>
@@ -390,19 +390,19 @@ export const posts = [
             <p class="lead">Every great brand begins with a belief. For SVE Interior, that belief was simple yet radical: thoughtful design should stand the test of time. In 2008, Yash and Nidhi Mamoria took that conviction and turned it into what is now Rajasthan's most trusted interior solutions studio.</p>
 
             <h2>The Beginning: Conviction Over Caution</h2>
-            <p>When Yash and Nidhi Mamoria founded SVE Interior in 2008, the interior design landscape in Jaipur was dominated by short-term thinking — quick jobs, trendy materials, and little regard for longevity. The Mamorias saw an opportunity to do things differently. Their philosophy was clear from day one: invest in long-term value, never settle for short-term trends.</p>
-            <p>This wasn't just a business strategy — it was a personal conviction. Yash, with his unwavering eye for detail and quality, believed that every space should reflect the personality of its owner. Nidhi brought operational excellence, ensuring that every project — from consultation to final delivery — was a seamless customer experience.</p>
+            <p>When Yash and Nidhi Mamoria founded SVE Interior in 2008, the interior design landscape in Jaipur was dominated by short-term thinking-quick jobs, trendy materials, and little regard for longevity. The Mamorias saw an opportunity to do things differently. Their philosophy was clear from day one: invest in long-term value, never settle for short-term trends.</p>
+            <p>This wasn't just a business strategy-it was a personal conviction. Yash, with his unwavering eye for detail and quality, believed that every space should reflect the personality of its owner. Nidhi brought operational excellence, ensuring that every project-from consultation to final delivery-was a seamless customer experience.</p>
 
             <h2>Building a Legacy</h2>
             <p>What started as a small showroom in Raja Park, Jaipur, has grown into a comprehensive design studio offering complete interior solutions. Over 15 years, SVE Interior has completed more than 15,000 projects, served 500+ corporate clients nationwide, and earned 6,000+ direct customer recommendations.</p>
             <p>The numbers are impressive, but they tell only part of the story. Behind every project is a relationship built on trust, transparency, and a shared vision for creating spaces that endure.</p>
 
             <h2>The Philosophy: Designing with Purpose</h2>
-            <p>SVE Interior's approach is guided by balance — between innovation and timelessness. They don't chase trends; they curate solutions that age gracefully. Every material is selected for its premium product quality. Every design decision is made with the occupant's lifestyle in mind.</p>
+            <p>SVE Interior's approach is guided by balance-between innovation and timelessness. They don't chase trends; they curate solutions that age gracefully. Every material is selected for its premium product quality. Every design decision is made with the occupant's lifestyle in mind.</p>
             <p>"We don't just decorate spaces," Yash explains. "We understand how people live, work, and feel in their environments. That understanding is what separates decoration from true interior design."</p>
 
             <h2>Looking Forward</h2>
-            <p>As SVE Interior enters its 16th year, the Mamorias remain as hands-on as ever. Their commitment to excellence hasn't wavered — if anything, it has deepened. With a growing portfolio of residential and commercial projects across Rajasthan and beyond, SVE Interior continues to prove that conviction, paired with craftsmanship, creates something truly lasting.</p>
+            <p>As SVE Interior enters its 16th year, the Mamorias remain as hands-on as ever. Their commitment to excellence hasn't wavered-if anything, it has deepened. With a growing portfolio of residential and commercial projects across Rajasthan and beyond, SVE Interior continues to prove that conviction, paired with craftsmanship, creates something truly lasting.</p>
         `
     },
     {
@@ -411,10 +411,10 @@ export const posts = [
         category: "DESIGN PHILOSOPHY",
         date: "February 10, 2026",
         image: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "At SVE Interior, design is a way of thinking — not just a way of decorating. We explore how understanding lifestyles, movement patterns, and human psychology transforms ordinary rooms into extraordinary spaces.",
+        excerpt: "At SVE Interior, design is a way of thinking-not just a way of decorating. We explore how understanding lifestyles, movement patterns, and human psychology transforms ordinary rooms into extraordinary spaces.",
         tags: ["Spatial Planning", "Interior Design Philosophy", "Complete Interior Solutions", "Design Thinking", "SVE Interior"],
         content: `
-            <p class="lead">Walk into any well-designed space, and something feels right — even if you can't immediately articulate why. That invisible quality is the result of spatial planning, a discipline that goes far beyond choosing colors and furniture. At SVE Interior, we believe design is a way of thinking, not just a way of decorating.</p>
+            <p class="lead">Walk into any well-designed space, and something feels right-even if you can't immediately articulate why. That invisible quality is the result of spatial planning, a discipline that goes far beyond choosing colors and furniture. At SVE Interior, we believe design is a way of thinking, not just a way of decorating.</p>
 
             <h2>Understanding How People Live</h2>
             <p>The first step in any SVE Interior project isn't selecting materials or browsing catalogues. It's understanding the client. How does a family move through their home? Where do they gather? Where do they retreat for solitude? What brings them comfort?</p>
@@ -440,7 +440,7 @@ export const posts = [
             </ul>
 
             <h2>Why It Matters</h2>
-            <p>A beautifully decorated room can photograph well. But a thoughtfully planned space transforms how you live. It reduces daily friction, elevates your mood, and adapts to your evolving needs over years — not just seasons. That's the difference between decoration and design, and it's the standard we hold ourselves to at SVE Interior.</p>
+            <p>A beautifully decorated room can photograph well. But a thoughtfully planned space transforms how you live. It reduces daily friction, elevates your mood, and adapts to your evolving needs over years-not just seasons. That's the difference between decoration and design, and it's the standard we hold ourselves to at SVE Interior.</p>
         `
     },
     {
@@ -449,13 +449,13 @@ export const posts = [
         category: "COMMERCIAL",
         date: "February 5, 2026",
         image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop",
-        excerpt: "With 500+ corporate clients nationwide — from boutique offices to hospitality chains — SVE Interior has earned its reputation as Rajasthan's most trusted partner for large-scale commercial interiors. Here's why brands trust us with their most important spaces.",
+        excerpt: "With 500+ corporate clients nationwide-from boutique offices to hospitality chains-SVE Interior has earned its reputation as Rajasthan's most trusted partner for large-scale commercial interiors. Here's why brands trust us with their most important spaces.",
         tags: ["Commercial Interiors Jaipur", "Corporate Interior Design", "Office Interiors", "Hospitality Design", "SVE Interior Commercial"],
         content: `
             <p class="lead">Commercial interior design operates on a different plane than residential work. The stakes are higher, the timelines tighter, and the expectations more rigorous. With 500+ corporate clients nationwide and 15,000+ completed projects, SVE Interior has built a commercial practice grounded in one principle: trust is earned through precision.</p>
 
             <h2>Why Commercial Clients Choose SVE Interior</h2>
-            <p>When a hotel chain selects an interior partner, they're not just choosing a vendor — they're choosing a guardian of their brand identity. Every material, every finish, every spatial decision reflects on the brand. That's why corporate clients consistently return to SVE Interior: we understand that commercial design is brand design.</p>
+            <p>When a hotel chain selects an interior partner, they're not just choosing a vendor-they're choosing a guardian of their brand identity. Every material, every finish, every spatial decision reflects on the brand. That's why corporate clients consistently return to SVE Interior: we understand that commercial design is brand design.</p>
 
             <h2>Scale Without Compromise</h2>
             <p>One of the greatest challenges in commercial interiors is maintaining quality at scale. A five-room boutique hotel demands the same attention to detail as a 200-room chain. Our approach ensures consistency:</p>
@@ -476,9 +476,9 @@ export const posts = [
             </ul>
 
             <h2>The SVE Advantage</h2>
-            <p>What sets our commercial practice apart is the same philosophy that guides our residential work: every decision is guided by balance — between innovation and timelessness. We don't design spaces that need to be renovated every three years. We create environments that evolve gracefully, protecting our clients' investment and reinforcing their brand for years to come.</p>
+            <p>What sets our commercial practice apart is the same philosophy that guides our residential work: every decision is guided by balance-between innovation and timelessness. We don't design spaces that need to be renovated every three years. We create environments that evolve gracefully, protecting our clients' investment and reinforcing their brand for years to come.</p>
 
-            <p>If you're planning a commercial interior project — whether it's a single office or a multi-location rollout — we'd love to show you what 15 years of precision and 500+ corporate relationships have taught us about designing spaces that work as hard as you do.</p>
+            <p>If you're planning a commercial interior project-whether it's a single office or a multi-location rollout-we'd love to show you what 15 years of precision and 500+ corporate relationships have taught us about designing spaces that work as hard as you do.</p>
         `
     }
 ];

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import BrandPartners from '../components/BrandPartners';
 
 export default function About() {
@@ -21,7 +21,7 @@ export default function About() {
                             SVE Interior was born out of a belief that thoughtful design can stand the test of time. We bridge the gap between form and function, elegance and comfort. With 15+ years of experience delivering premium product quality and a seamless customer experience, we are Jaipur's most trusted name in complete interior solutions.
                         </p>
                         <p className="text-body-text leading-relaxed mb-12 font-light">
-                            Founded by Yash &amp; Nidhi Mamoria, SVE Interior has grown from a passion project into one of Rajasthan's leading interior showrooms. Every decision we make is guided by balance—between innovation and timelessness—ensuring spaces that feel both modern and enduring.
+                            Founded by Yash &amp; Nidhi Mamoria, SVE Interior has grown from a passion project into one of Rajasthan's leading interior showrooms. Every decision we make is guided by balance-between innovation and timelessness-ensuring spaces that feel both modern and enduring.
                         </p>
 
                     </motion.div>
@@ -82,7 +82,7 @@ export default function About() {
                                 className="space-y-6 text-body-text font-light text-lg leading-relaxed"
                             >
                                 <p>
-                                    At SVE Interior, we believe that great design is invisible—it simply feels right. Since 2008, we have been delivering complete interior solutions that combine premium product quality with a seamless customer experience. Every project we undertake is guided by balance—between innovation and timelessness.
+                                    At SVE Interior, we believe that great design is invisible-it simply feels right. Since 2008, we have been delivering complete interior solutions that combine premium product quality with a seamless customer experience. Every project we undertake is guided by balance-between innovation and timelessness.
                                 </p>
                                 <p>
                                     With 15,000+ projects completed and 500+ corporate clients nationwide, our reputation speaks for itself. From bespoke home furnishings to large-scale commercial fit-outs, we bring the same conviction: invest in long-term value, never settle for short-term trends.

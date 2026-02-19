@@ -1,4 +1,4 @@
-export const products = [
+﻿export const products = [
     {
         id: "wallpaper",
         title: "Wallpaper",
@@ -9,7 +9,7 @@ export const products = [
             "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200&auto=format&fit=crop"
         ],
         description: "Exclusive customized 3D and 5D wallpapers. From royal damask patterns to modern geometrics.",
-        longDescription: "Transform your walls into works of art with our curated collection of international wallcoverings. As part of our complete interior solutions, whether you prefer the subtle elegance of linen textures, the opulence of metallic damask, or the bold statement of 5D geometric designs, our wallpapers are chosen for their premium product quality—durability, washability, and colorfastness. Every selection is guided by balance—between innovation and timelessness.",
+        longDescription: "Transform your walls into works of art with our curated collection of international wallcoverings. As part of our complete interior solutions, whether you prefer the subtle elegance of linen textures, the opulence of metallic damask, or the bold statement of 5D geometric designs, our wallpapers are chosen for their premium product quality-durability, washability, and colorfastness. Every selection is guided by balance-between innovation and timelessness.",
         material: "Non-Woven, Vinyl, Fabric-Backed",
         durability: "Washable, Scrubbable, Fade-Resistant",
         bestUse: "Accent Walls, Bedrooms, Dining Areas"
@@ -17,14 +17,14 @@ export const products = [
     {
         id: "wooden-flooring",
         title: "Wooden Flooring",
-        image: "/product-flooring.jpg",
+        image: "/wooden-flooring.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1622372738946-a287d37265be?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?q=80&w=1200&auto=format&fit=crop"
         ],
         description: "Premium hardwood and laminate flooring that brings warmth and durability to your home.",
-        longDescription: "Bring the timeless warmth of nature into your home with our engineered and laminate wooden flooring. Featuring high-definition wood grain textures and a robust core, our floors are designed to withstand daily wear while providing a quiet, comfortable walking surface. Every flooring choice is guided by balance—between innovation and timelessness—delivering premium product quality as part of our complete interior solutions.",
+        longDescription: "Bring the timeless warmth of nature into your home with our engineered and laminate wooden flooring. Featuring high-definition wood grain textures and a robust core, our floors are designed to withstand daily wear while providing a quiet, comfortable walking surface. Every flooring choice is guided by balance-between innovation and timelessness-delivering premium product quality as part of our complete interior solutions.",
         material: "Engineered Wood, HDF Laminate",
         durability: "Scratch & Stain Resistant (AC4/AC5)",
         bestUse: "Bedrooms, Living Areas, Home Gyms"
@@ -32,14 +32,14 @@ export const products = [
     {
         id: "stretch-ceiling",
         title: "Stretch Ceiling",
-        image: "/product-stretch-ceiling.jpg",
+        image: "/stretch-ceiling-product.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop"
         ],
         description: "Modern, glossy, and 3D stretch ceilings that redefine luxury. Perfect for living rooms and commercial spaces.",
-        longDescription: "Our premium Stretch Ceilings offer a flawless, mirror-like finish that visually expands your space. Manufactured using high-quality PVC polymer, these ceilings are not only aesthetic but also functional—offering water resistance, acoustic benefits, and the ability to hide wiring and HVAC ducts seamlessly. A key component of our complete interior solutions, each ceiling delivers premium product quality guided by balance—between innovation and timelessness.",
+        longDescription: "Our premium Stretch Ceilings offer a flawless, mirror-like finish that visually expands your space. Manufactured using high-quality PVC polymer, these ceilings are not only aesthetic but also functional-offering water resistance, acoustic benefits, and the ability to hide wiring and HVAC ducts seamlessly. A key component of our complete interior solutions, each ceiling delivers premium product quality guided by balance-between innovation and timelessness.",
         material: "High-Grade PVC Polymer",
         durability: "Water & Moisture Resistant, 10+ Years",
         bestUse: "Living Rooms, Commercial Lobbies, Pools"
@@ -77,14 +77,14 @@ export const products = [
     {
         id: "curtains",
         title: "Curtains",
-        image: "/product-curtains.jpg",
+        image: "/curtains.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1505691938895-1cd10274425d?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop"
         ],
         description: "Beautiful curtains to enhance your windows.",
-        longDescription: "Dress your windows in elegance with our bespoke curtaining solutions. We offer thousands of fabric choices from sheers to heavy velvets. Our team handles everything from measurement to stitching with various heading styles like Eyelet, Pleated, or Ripple Fold—ensuring a seamless customer experience and premium product quality at every step.",
+        longDescription: "Dress your windows in elegance with our bespoke curtaining solutions. We offer thousands of fabric choices from sheers to heavy velvets. Our team handles everything from measurement to stitching with various heading styles like Eyelet, Pleated, or Ripple Fold-ensuring a seamless customer experience and premium product quality at every step.",
         material: "Cotton, Linen, Silk, Velvet",
         durability: "Fade Resistant Lining Available",
         bestUse: "Living Rooms, Bedrooms, Large Windows"
@@ -92,14 +92,14 @@ export const products = [
     {
         id: "blinds",
         title: "Blinds",
-        image: "/product-blinds.jpg",
+        image: "/blinds.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1594122230689-42b8b688dccc?q=80&w=1200&auto=format&fit=crop",
             "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
         ],
         description: "Zebra, Roller, and Roman blinds for perfect light control.",
-        longDescription: "Experience precise light control and privacy with our automated and manual blinds. From the dual-layer versatility of Zebra blinds to the classic elegance of Roman shades, our window treatments are custom-manufactured to fit your windows perfectly. Available with Somfy motorization for smart home integration—delivering complete interior solutions with premium product quality.",
+        longDescription: "Experience precise light control and privacy with our automated and manual blinds. From the dual-layer versatility of Zebra blinds to the classic elegance of Roman shades, our window treatments are custom-manufactured to fit your windows perfectly. Available with Somfy motorization for smart home integration-delivering complete interior solutions with premium product quality.",
         material: "Polyester, Linen, Blackout Fabrics",
         durability: "UV Resistant, Dust Repellent",
         bestUse: "Home Offices, Bedrooms, Conference Rooms"
@@ -114,7 +114,7 @@ export const products = [
             "https://images.unsplash.com/photo-1520699049698-386033877076?q=80&w=1200&auto=format&fit=crop"
         ],
         description: "Soundproofing acoustic panels for studios and homes.",
-        longDescription: "Achieve auditory perfection with our designer Acoustic Panels. Ideal for home theaters, conference rooms, and recording studios, these panels absorb reverberation and noise without compromising on style. Available in hex grids, slats, and custom shapes—our acoustic solutions showcase premium product quality guided by balance—between innovation and timelessness.",
+        longDescription: "Achieve auditory perfection with our designer Acoustic Panels. Ideal for home theaters, conference rooms, and recording studios, these panels absorb reverberation and noise without compromising on style. Available in hex grids, slats, and custom shapes-our acoustic solutions showcase premium product quality guided by balance-between innovation and timelessness.",
         material: "Polyester Fiber, Wood Slats",
         durability: "Impact Resistant, Fire Retardant",
         bestUse: "Home Theaters, Recording Studios, Offices"

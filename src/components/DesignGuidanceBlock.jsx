@@ -1,11 +1,11 @@
-import React from 'react';
+﻿import React from 'react';
 import { motion } from 'framer-motion';
 
 const insights = {
     'stretch-ceiling': "Reflect light to create an illusion of infinite height. Use glossy finishes in compact areas to dramatically expand perception.",
     'wallpaper': "Walls are the canvas of mood. Texture adds depth where color alone falls flat; consider metallic accents for evening elegance.",
     'blinds': "Shadow is just as important as light. Layering sheers with block-outs allows you to sculpt the day's ambiance hour by hour.",
-    'sofa-upholstery': "Touch is the first sense of comfort. Prioritize tactile richness—velvets for warmth, linens for breathability—to ground the living experience.",
+    'sofa-upholstery': "Touch is the first sense of comfort. Prioritize tactile richness-velvets for warmth, linens for breathability-to ground the living experience.",
     'wooden-flooring': "Ground your space with organic warmth. The grain direction guides the eye, subtly dictating the flow and energy of a room.",
     'acoustic-panels': "Silence is the ultimate luxury. Beyond aesthetics, dampen the noise of modern life to create a sanctuary of focus and calm.",
     'decking-cladding': "Architecture shouldn't stop at the structure. Use cladding to add three-dimensional rhythm to flat facades and feature walls.",

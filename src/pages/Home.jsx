@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Ruler, HardHat, Hammer } from 'lucide-react';
 import { useState } from 'react';
@@ -25,30 +25,34 @@ export default function Home() {
             <section className="relative h-screen flex items-center justify-center overflow-hidden bg-blush">
                 {/* Background with Slow Scale Animation - Optional Image or just Blush color */}
                 <motion.div
-                    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-50 mix-blend-multiply"
+                    className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2600&auto=format&fit=crop')",
-                        y: y1 // Parallax effect on scroll
+                        backgroundImage: "url('/hero-bg.jpg')",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        y: y1
                     }}
                     animate={{ scale: [1, 1.1] }}
                     transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
                 >
                 </motion.div>
+                {/* Dark overlay for text legibility */}
+                <div className="absolute inset-0 z-[1]" style={{ background: "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.25))" }} />
 
                 {/* Hero Content */}
                 <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
                     <div className="mb-8">
                         <ShinyText
                             text="Est. 2008-Jaipur, India"
-                            className="text-heading !text-black uppercase text-xs md:text-sm font-bold tracking-[0.3em] drop-shadow-sm"
+                            className="!text-white/80 uppercase text-xs md:text-sm font-bold tracking-[0.3em] drop-shadow-sm"
 
                         />
                     </div>
 
-                    <div className="mb-10 text-5xl md:text-7xl lg:text-9xl font-serif font-bold text-heading leading-none tracking-tight">
-                        <BlurText text="A Legacy of" delay={0.3} className="block text-center justify-center text-heading" />
-                        <span className="italic font-light text-body-text block mt-2">
-                            <BlurText text="Luxury" delay={1} className="block text-center justify-center text-body-text" />
+                    <div className="mb-10 text-5xl md:text-7xl lg:text-9xl font-serif font-bold text-white leading-none tracking-tight">
+                        <BlurText text="A Legacy of" delay={0.3} className="block text-center justify-center text-white drop-shadow-lg" />
+                        <span className="italic font-light text-white/80 block mt-2">
+                            <BlurText text="Luxury" delay={1} className="block text-center justify-center text-white/80 drop-shadow-lg" />
                         </span>
                     </div>
 
@@ -56,7 +60,7 @@ export default function Home() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 1.2 }}
-                        className="text-2xl md:text-3xl font-serif text-heading mb-4 max-w-3xl mx-auto leading-snug"
+                        className="text-2xl md:text-3xl font-serif text-white mb-4 max-w-3xl mx-auto leading-snug drop-shadow"
                     >
                         Defining Jaipur's Interiors Since 2008
                     </motion.p>
@@ -64,9 +68,9 @@ export default function Home() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 1.5 }}
-                        className="text-base md:text-lg text-body-text mb-12 font-light max-w-2xl mx-auto leading-relaxed"
+                        className="text-base md:text-lg text-white/75 mb-12 font-light max-w-2xl mx-auto leading-relaxed"
                     >
-                        Founded by Yash &amp; Nidhi Mamoria on the principles of design integrity and honest craftsmanship. With 15+ years of experience and 15,000+ projects completed, we don't just decorate spaces—we create enduring experiences.
+                        Founded by Yash &amp; Nidhi Mamoria on the principles of design integrity and honest craftsmanship. With 15+ years of experience and 15,000+ projects completed, we don't just decorate spaces-we create enduring experiences.
                     </motion.p>
 
                     <motion.div

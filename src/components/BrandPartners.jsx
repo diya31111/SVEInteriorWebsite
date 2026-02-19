@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 
 const brands = [
     // Textile & Fabric
@@ -60,7 +60,7 @@ function BrandLogo({ brand, index }) {
                     }}
                 />
             ) : null}
-            {/* Text fallback — always rendered, shown when no logo or logo fails */}
+            {/* Text fallback-always rendered, shown when no logo or logo fails */}
             <span
                 className={`font-serif font-bold text-heading text-center leading-tight tracking-tight group-hover:text-cta transition-colors duration-300 ${brand.logo ? 'hidden' : 'flex'} items-center justify-center`}
                 style={{ fontSize: brand.name.length > 12 ? '0.8rem' : brand.name.length > 8 ? '0.95rem' : '1.1rem' }}
@@ -78,7 +78,7 @@ export default function BrandPartners() {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-serif text-heading mb-6">A Legacy of Luxury: <span className="italic text-cta">Our Global Brand Partners</span></h2>
                     <p className="text-body-text max-w-2xl mx-auto font-light text-lg">
-                        Partnering with the world's most elite textile and decor brands—from Versace to D'Decor—to bring international quality and designer elegance to your doorstep.
+                        Partnering with the world's most elite textile and decor brands-from Versace to D'Decor-to bring international quality and designer elegance to your doorstep.
                     </p>
                 </div>
 

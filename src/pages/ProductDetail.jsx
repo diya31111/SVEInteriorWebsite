@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { products } from '../data/products';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -62,7 +62,7 @@ export default function ProductDetail() {
             exit="exit"
             className="bg-primary min-h-screen"
         >
-            {/* Back to Curation — Sleek thin-lined arrow */}
+            {/* Back to Curation-Sleek thin-lined arrow */}
             <div className="fixed top-36 left-6 z-30">
                 <Link
                     to="/our-products"
@@ -78,7 +78,7 @@ export default function ProductDetail() {
             {/* === Hero: 60/40 Asymmetric Split === */}
             <section className="flex flex-col lg:flex-row min-h-screen">
 
-                {/* Left 60% — Full-bleed Image with Ken Burns */}
+                {/* Left 60%-Full-bleed Image with Ken Burns */}
                 <div className="w-full lg:w-[60%] h-[50vh] lg:h-screen relative">
                     <AnimatePresence mode="wait">
                         <motion.div
@@ -113,7 +113,7 @@ export default function ProductDetail() {
                     )}
                 </div>
 
-                {/* Right 40% — Dossier Panel */}
+                {/* Right 40%-Dossier Panel */}
                 <div className="w-full lg:w-[40%] lg:h-screen lg:overflow-y-auto" style={{ backgroundColor: '#f4e9e2' }}>
                     <div className="px-8 md:px-12 lg:px-14 py-12 lg:py-24 flex flex-col justify-center min-h-full">
 
@@ -127,7 +127,7 @@ export default function ProductDetail() {
                             SVE Signature Product
                         </motion.span>
 
-                        {/* Title — Oversized Elegant Serif */}
+                        {/* Title-Oversized Elegant Serif */}
                         <motion.h1
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -177,7 +177,7 @@ export default function ProductDetail() {
                             </div>
                         </motion.div>
 
-                        {/* Interactive Design Insight — Floating Card */}
+                        {/* Interactive Design Insight-Floating Card */}
                         <motion.div
                             initial={{ opacity: 0, y: 20, rotate: -1 }}
                             animate={{ opacity: 1, y: 0, rotate: -1 }}
@@ -189,7 +189,7 @@ export default function ProductDetail() {
                             <p className="text-lg font-serif italic text-heading/80 leading-relaxed">
                                 "A SVE Signature: Thoughtful details that elevate everyday living."
                             </p>
-                            <span className="block text-[9px] uppercase tracking-[0.2em] font-bold text-cta mt-3">— Design Philosophy</span>
+                            <span className="block text-[9px] uppercase tracking-[0.2em] font-bold text-cta mt-3">- Design Philosophy</span>
                         </motion.div>
 
                         {/* CTA */}
@@ -212,7 +212,7 @@ export default function ProductDetail() {
                 </div>
             </section>
 
-            {/* Gallery Strip — Additional Images */}
+            {/* Gallery Strip-Additional Images */}
             {displayImages.length > 1 && (
                 <section className="bg-primary py-20">
                     <div className="container mx-auto px-6">

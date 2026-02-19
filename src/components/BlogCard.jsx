@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 
 export default function BlogCard({ post }) {
     return (
@@ -6,7 +6,7 @@ export default function BlogCard({ post }) {
             to={`/blog/${post.id}`}
             className="group flex flex-col h-full bg-[#f4e9e2] rounded-xl overflow-hidden border border-soft-border hover:shadow-2xl hover:border-cta/30 transition-all duration-500 block"
         >
-            {/* Cover Image — Large */}
+            {/* Cover Image-Large */}
             <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                     src={post.image}
@@ -25,12 +25,12 @@ export default function BlogCard({ post }) {
                     <span className="text-gray-400">{post.date}</span>
                 </div>
 
-                {/* Title — Serif */}
+                {/* Title-Serif */}
                 <h3 className="text-xl md:text-2xl font-serif text-heading font-bold mb-4 leading-snug group-hover:text-cta transition-colors duration-300">
                     {post.title}
                 </h3>
 
-                {/* Excerpt — 2 lines */}
+                {/* Excerpt-2 lines */}
                 <p className="text-body-text text-sm leading-relaxed mb-8 line-clamp-2 font-light">
                     {post.excerpt}
                 </p>
