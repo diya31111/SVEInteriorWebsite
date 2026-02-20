@@ -8,7 +8,18 @@ const PORT = 3001;
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: (origin, callback) => {
+        // Allow localhost (dev), Vercel deployments, and direct API calls
+        const allowed = [
+            'http://localhost:5173',
+            'http://localhost:3000',
+        ];
+        if (!origin || allowed.includes(origin) || origin.endsWith('.vercel.app')) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     credentials: true
 }));
 app.use(bodyParser.json());
@@ -49,7 +60,7 @@ app.post('/api/save-contact', (req, res) => {
             console.error('Error inserting data:', err.message);
             return res.status(500).json({ error: 'Database error' });
         }
-        
+
         // Send success response immediately so the user isn't kept waiting
         res.status(201).json({
             message: 'Contact saved successfully',

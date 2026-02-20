@@ -35,7 +35,8 @@ export default function AdminLeads() {
         setLoading(true);
         setError('');
         try {
-            const res = await fetch('/api/leads');
+            const API_BASE = import.meta.env.VITE_API_URL || '';
+            const res = await fetch(`${API_BASE}/api/leads`);
             if (!res.ok) throw new Error('Failed to fetch leads');
             const data = await res.json();
             setLeads(data);
