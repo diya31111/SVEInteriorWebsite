@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Ruler, HardHat, Hammer } from 'lucide-react';
 import { useState } from 'react';
 import { products } from '../data/products';
+import heroBg from '../assets/WhatsApp Image 2026-02-09 at 5.33.48 PM.jpeg';
 
 import WhyChooseUs from '../components/WhyChooseUs';
 import Stats from '../components/Stats';
@@ -27,7 +28,7 @@ export default function Home() {
                 <motion.div
                     className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: "url('/hero-bg.jpg')",
+                        backgroundImage: `url(${heroBg})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         y: y1
@@ -62,7 +63,7 @@ export default function Home() {
                         transition={{ duration: 1, delay: 1.2 }}
                         className="text-2xl md:text-3xl font-serif text-white mb-4 max-w-3xl mx-auto leading-snug drop-shadow"
                     >
-                        Defining Jaipur's Interiors Since 2008
+                        Defining Jaipur's Skyline Since 2008
                     </motion.p>
                     <motion.p
                         initial={{ opacity: 0 }}

@@ -66,12 +66,12 @@ export default function ProductDetail() {
             <div className="fixed top-36 left-6 z-30">
                 <Link
                     to="/our-products"
-                    className="group inline-flex items-center gap-3 bg-secondary/80 backdrop-blur-md border border-soft-border rounded-full pl-3 pr-5 py-2.5 hover:border-cta transition-all duration-300 shadow-sm"
+                    className="group inline-flex items-center gap-3 bg-white border-2 border-black rounded-full pl-3 pr-5 py-2.5 hover:bg-black transition-all duration-300 shadow-lg"
                 >
-                    <span className="w-7 h-7 rounded-full border border-heading/20 flex items-center justify-center group-hover:border-cta group-hover:bg-cta transition-all duration-300">
-                        <ArrowLeft size={12} className="text-heading group-hover:text-white transition-colors" />
+                    <span className="w-7 h-7 rounded-full border border-black flex items-center justify-center group-hover:border-white group-hover:bg-white transition-all duration-300">
+                        <ArrowLeft size={12} className="text-black group-hover:text-black transition-colors" />
                     </span>
-                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-heading">Back to Curation</span>
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-black group-hover:text-white">Back to Curation</span>
                 </Link>
             </div>
 
@@ -201,7 +201,7 @@ export default function ProductDetail() {
                         >
                             <Link
                                 to="/contact-us"
-                                className="inline-flex items-center gap-3 bg-heading text-white px-8 py-4 rounded-sm hover:bg-cta transition-colors duration-300 group"
+                                className="inline-flex items-center gap-3 bg-white text-black border-2 border-black px-8 py-4 rounded-sm hover:bg-black hover:text-white transition-all duration-300 group shadow-lg"
                             >
                                 <span className="text-xs uppercase tracking-[0.2em] font-bold">Request a Consultation</span>
                                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />

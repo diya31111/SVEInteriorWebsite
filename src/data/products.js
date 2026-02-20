@@ -1,7 +1,7 @@
 ﻿export const products = [
     {
         id: "wallpaper",
-        title: "Wallpaper",
+        title: "Wallpaper: The Art of Living Walls",
         image: "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=1200&auto=format&fit=crop",
         gallery: [
             "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
@@ -16,7 +16,7 @@
     },
     {
         id: "wooden-flooring",
-        title: "Wooden Flooring",
+        title: "Wooden Flooring: Timeless Underfoot",
         image: "/wooden-flooring.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1200&auto=format&fit=crop",
@@ -31,7 +31,7 @@
     },
     {
         id: "stretch-ceiling",
-        title: "Stretch Ceiling",
+        title: "Stretch Ceilings: The Zenith of Luxury",
         image: "/stretch-ceiling-product.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
@@ -46,7 +46,7 @@
     },
     {
         id: "sofa-upholstery",
-        title: "Sofa & Upholstery",
+        title: "Sofa & Upholstery: Bespoke Comfort",
         image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1200&auto=format&fit=crop",
         gallery: [
             "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1200&auto=format&fit=crop",
@@ -76,7 +76,7 @@
     },
     {
         id: "curtains",
-        title: "Curtains",
+        title: "Curtains: Drapes of Elegance",
         image: "/curtains.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
@@ -91,7 +91,7 @@
     },
     {
         id: "blinds",
-        title: "Blinds",
+        title: "Blinds: Precision Light Control",
         image: "/blinds.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
@@ -106,7 +106,7 @@
     },
     {
         id: "acoustic-panels",
-        title: "Acoustic Panels",
+        title: "Acoustic Panels: Where Silence Meets Style",
         image: "/product-acoustic-panels.jpg",
         gallery: [
             "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
@@ -136,7 +136,7 @@
     },
     {
         id: "wall-to-wall-carpets",
-        title: "Wall-to-Wall Carpets",
+        title: "Carpet & Rugs: Woven Heritage Underfoot",
         image: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop",
         gallery: [
             "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=1200&auto=format&fit=crop",

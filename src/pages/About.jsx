@@ -3,10 +3,10 @@ import BrandPartners from '../components/BrandPartners';
 
 export default function About() {
     return (
-        <div className="bg-blush min-h-screen pt-32 pb-20 overflow-hidden">
+        <div style={{ backgroundColor: '#F1DDDA' }} className="min-h-screen pt-32 pb-20 overflow-hidden">
 
             {/* Hero Section */}
-            <section className="container mx-auto px-6 mb-32">
+            <section className="container mx-auto px-6 mb-32 bg-transparent">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -46,7 +46,7 @@ export default function About() {
             </section>
 
             {/* Design is Our Passion Section */}
-            <section className="bg-[#f4e9e2] py-32 my-32 relative">
+            <section className="bg-[#F1DDDA] py-32 my-32 relative">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-rose/20 to-transparent"></div>
                     <div className="absolute top-0 right-1/4 w-px h-full bg-gradient-to-b from-transparent via-rose/20 to-transparent"></div>
@@ -97,7 +97,7 @@ export default function About() {
             </section>
 
             {/* Founders Section */}
-            <section className="container mx-auto px-6 mb-32">
+            <section className="container mx-auto px-6 mb-32 bg-transparent">
                 <div className="text-center mb-16">
                     <span className="text-gold tracking-[0.2em] uppercase text-xs font-bold block mb-4">The Visionaries</span>
                     <h2 className="text-4xl md:text-5xl font-serif text-heading">Meet the <span className="text-cta italic">Founders</span></h2>
@@ -123,7 +123,7 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: i * 0.2 }}
-                            className="bg-[#f4e9e2] rounded-2xl overflow-hidden border border-soft-border shadow-sm hover:shadow-lg transition-shadow duration-500 group"
+                            className="bg-transparent rounded-2xl overflow-hidden group"
                         >
                             <div className="h-72 overflow-hidden">
                                 <img
@@ -151,17 +151,17 @@ export default function About() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-4xl font-serif text-heading mb-8">Now We <span className="text-cta italic">Have</span></h2>
+                        <h2 className="text-4xl font-serif text-heading mb-8">15 Years of <span className="text-cta italic">Living Art</span></h2>
                         <p className="text-body-text leading-loose mb-8 text-lg">
-                            We use next-gen Design, Technology, Furniture & Implementation methods, to solve not just today’s Home Interior needs, but even the ones you don’t foresee for tomorrow.
+                            Since 2008, SVE Interior has grown from a passion project into Rajasthan's most trusted curator of living spaces. What began as a vision by Yash & Nidhi Mamoria has evolved into a 15,000+ project legacy — a testament to uncompromising craftsmanship and a deep understanding of how people truly live.
                         </p>
                         <p className="text-body-text leading-loose mb-12 text-lg">
-                            We are a full home furnishing solution company that understands your need for an affordable, reliable and professional interior solution service. With a curated collection of home furnishing products, a team of talented professionals and a commitment to exceed your expectations.
+                            We don't just furnish rooms — we architect emotions. Every stretch ceiling, every woven curtain, every plank of flooring is selected with one purpose: to make your space feel unmistakably <em>yours</em>. As Rajasthan's foremost interior authority, we bring global design sensibility with local precision.
                         </p>
 
                         <div className="grid grid-cols-2 gap-6">
-                            {['Curated Signature Products', 'Talented Professionals', 'Quality & Affordability', 'Next-Gen Technology'].map((item, i) => (
-                                <div key={i} className="flex items-center gap-3 p-4 border border-black/10 bg-[#f4e9e2]/40 rounded-lg hover:bg-rose/10 transition-colors cursor-default">
+                            {['15+ Years of Design Excellence', '15,000+ Completed Projects', "Rajasthan's Curator of Living Art", 'Trusted by 500+ Corporates'].map((item, i) => (
+                                <div key={i} className="flex items-center gap-3 p-4 border border-black/10 bg-[#F1DDDA]/40 rounded-lg hover:bg-rose/10 transition-colors cursor-default">
                                     <div className="w-2 h-2 bg-cta rounded-full flex-shrink-0"></div>
                                     <span className="text-sm font-medium text-heading">{item}</span>
                                 </div>
