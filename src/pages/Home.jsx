@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Ruler, HardHat, Hammer } from 'lucide-react';
 import { useState } from 'react';
 import { products } from '../data/products';
-import heroBg from '../assets/WhatsApp Image 2026-02-09 at 5.33.48 PM.jpeg';
+import heroBg from '../assets/home-page-hero.png';
 
 import WhyChooseUs from '../components/WhyChooseUs';
 import Stats from '../components/Stats';
