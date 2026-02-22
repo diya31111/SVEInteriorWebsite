@@ -36,12 +36,12 @@ export default function Footer() {
                     <h4 className="text-xl font-serif font-bold mb-6 text-gold">Products</h4>
                     <ul className="space-y-3 text-white/80">
                         <li><Link to="/product/stretch-ceiling" className="hover:text-cta">Stretch Ceilings</Link></li>
-                        <li><Link to="/product/wallpapers" className="hover:text-cta">Wallpapers</Link></li>
+                        <li><Link to="/product/wallpaper" className="hover:text-cta">Wallpapers</Link></li>
                         <li><Link to="/product/wooden-flooring" className="hover:text-cta">Wooden Flooring</Link></li>
                         <li><Link to="/product/blinds" className="hover:text-cta">Blinds</Link></li>
                         <li><Link to="/product/acoustic-panels" className="hover:text-cta">Acoustic Panels</Link></li>
                         <li><Link to="/product/curtains" className="hover:text-cta">Curtains</Link></li>
-                        <li><Link to="/product/upholstery-sofa-fabrics" className="hover:text-cta">Sofa Fabrics</Link></li>
+                        <li><Link to="/product/sofa-upholstery" className="hover:text-cta">Sofa Fabrics</Link></li>
                     </ul>
                 </div>
 

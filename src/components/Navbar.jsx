@@ -7,16 +7,7 @@ import logo from '../assets/logo.png';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 20);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     useEffect(() => {
         setIsOpen(false);
@@ -33,10 +24,7 @@ export default function Navbar() {
 
     return (
         <nav
-            className={clsx(
-                'fixed top-0 left-0 w-full z-50 transition-all duration-500',
-                'fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-stone-100/95 backdrop-blur-md border-b border-soft-border py-4 shadow-sm'
-            )}
+            className="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-stone-100/95 backdrop-blur-md border-b border-soft-border py-4 shadow-sm"
         >
             <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
                 {/* Logo */}

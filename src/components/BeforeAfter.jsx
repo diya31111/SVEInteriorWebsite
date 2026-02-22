@@ -1,10 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { ArrowLeftRight } from 'lucide-react';
 
-export default function BeforeAfter({
-    beforeImage = "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop",
-    afterImage = "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1600&auto=format&fit=crop"
-}) {
+export default function BeforeAfter({ beforeImage, afterImage }) {
     const [sliderPosition, setSliderPosition] = useState(50);
     const [isDragging, setIsDragging] = useState(false);
     const containerRef = useRef(null);
